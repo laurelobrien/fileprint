@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Apercu Mono';
+  src: url('../fonts/Apercu Mono.otf') format('opentype');
+}
+
+/* Global Styles
+----------------------------*/
+@media all {
+  .page-break {
+    display: none;
+  }
+}
+
+.small-caps {
+    -ms-font-feature-settings: "smcp";
+    -moz-font-feature-settings: "smcp";
+    -webkit-font-feature-settings: "smcp";
+    font-feature-settings: "smcp";
+}
+
+body {
+  padding: 70px 50px;
+}
+
+.container {
+  width: 45%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: left;
+}
+
+h1 {
+  font-family: 'Apercu Mono';
+  color: #1500a2;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: 'Apercu Mono';
+  color: #1500a2;
+}
+
+#textblock {
+  margin-top: 100px;
+  color: #1500a2;
+}
+
+p {
+  font-family: 'Adobe Caslon Pro';
+  font-size: 16pt;
+}
+
+/* Header
+---------------------*/
+#title {
+  font-size: 3em;
+}
+
+header h2 {
+}
+
+#stepbystep {
+  display: flex;
+  justify-content: space-between;
+}
+
+#stepbystep img {
+  display: inline;
+  width: 15%;
+}
+
+#stepbystep #arrows {
+  width: 9%;
+}
