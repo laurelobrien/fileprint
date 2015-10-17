@@ -7,8 +7,8 @@
 }
 
 body {
-  padding: 70px 50px;
-  position: relative;
+  padding: 95px 50px;
+  text-align: left;
 }
 
 .container {
@@ -32,23 +32,39 @@ body {
 
 /* Typography
 ----------------------------*/
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 p {
-  font-family: 'Lora', Georgia;
-  font-size: 14pt;
+  font-family: 'Aldus', Georgia;
+  font-size: 1.3em;
   color: #1500a2;
-  line-height: 150%;
+  line-height: 130%;
   text-align: justify;
 }
 
 h1 {
   font-family: 'Apercu Mono', Courier;
-  color: #1500a2;
-  font-size: 3em;
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: normal;
+  padding: 5px 5px 5px 7px;
+  background-color: #1500a2;
+  display: inline-block;
 }
 
 h2 {
   font-family: 'Apercu Mono';
   color: #1500a2;
+}
+
+li {
+  font-family: 'Apercu Mono';
+  font-size: 1em;
 }
 
 .small-caps {
@@ -59,17 +75,34 @@ h2 {
 }
 
 
-/* Header
+/* Sidebar
 ----------------------------*/
-#titlebox {
-  width: 20%;
-  position: absolute;
-  left: 3%; top: 70px;
+header {
+  width: 15%;
+  position: fixed;
+  top: 100px; left: 2%;
 }
 
-#titlebox h1 {
-  font-size: 2em;
+nav {
+  margin: 50px 0 0 0;
+  padding: 0;
 }
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 17px 0;
+  padding: 0;
+  color: #1500a2;
+}
+
+
+/* Header
+----------------------------*/
 
 h2 {
   font-family: 'Apercu Mono';
