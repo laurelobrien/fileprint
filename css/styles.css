@@ -24,7 +24,7 @@ body {
 .container {
   width: 50%;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: auto 35% auto auto;
   text-align: left;
 }
 
@@ -52,23 +52,29 @@ a {
 
 p {
   font-family: 'Acumin-Pro', Helvetica, Arial;
-  font-size: 12pt;
-  line-height: 130%;
+  font-size: 14pt;
+  line-height: 140%;
   text-align: justify;
 }
 
 h1 {
   font-family: 'Larish Neue', Courier;
-  font-size: 2em;
+  font-size: 22pt;
   font-weight: normal;
   padding: 5px 5px 5px 7px;
   display: inline-block;
 }
 
+h1 a {
+  border: none;
+  color: inherit;
+}
+
 h2 {
   font-family: 'Larish Neue';
   text-transform: lowercase;
-  font-size: 24pt;
+  font-size: 22pt;
+  font-weight: normal;
 }
 
 li {
@@ -103,7 +109,7 @@ li {
 header {
   width: 15%;
   position: fixed;
-  top: 100px; right: 15%;
+  top: 100px; right: 12%;
 }
 
 nav {
@@ -130,11 +136,6 @@ li a {
 /* Header
 ----------------------------*/
 
-h2 {
-  font-family: 'Larish Neue';
-  font-size: 2em;
-}
-
 #stepbystep {
   margin: 90px auto 90px auto;
 }
@@ -154,7 +155,7 @@ h2 {
 }
 
 #maincontent h2 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #recipe-old {
@@ -182,6 +183,22 @@ img {
   margin: auto 0 40px 0;
 }
 
+
+/* Index
+----------------------------*/
+#flexGrid {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#gridCell {
+  width: 30%;
+}
+
+#gridCell img {
+  width: 100%;
+}
 
 
 /* Captions and Pull-Quotes
