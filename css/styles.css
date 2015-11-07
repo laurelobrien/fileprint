@@ -65,7 +65,7 @@ h1 {
   display: inline-block;
 }
 
-h1 a {
+h1 a, h2 a, h3 a, .noUnderline {
   border: none;
   color: inherit;
 }
@@ -80,6 +80,10 @@ h2 {
 li {
   font-family: 'Larish Neue';
   font-size: 1em;
+}
+
+.chapterTitle {
+  margin-bottom: 70px;
 }
 
 .small-caps {
@@ -155,7 +159,9 @@ li a {
 }
 
 #maincontent h2 {
-  margin-bottom: 10px;
+  font-size: 32pt;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 #recipe-old {
@@ -180,12 +186,21 @@ img {
 
 #imageStack {
   position: relative;
-  margin: auto 0 40px 0;
+  margin: auto 0 50px 0;
 }
 
 
 /* Index
 ----------------------------*/
+#indexbody header {
+  right: 5%;
+}
+
+#indexcontent {
+  width: 70%;
+  margin-right: 25%;
+}
+
 #flexGrid {
   width: 100%;
   display: flex;
@@ -198,6 +213,23 @@ img {
 
 #gridCell img {
   width: 100%;
+}
+
+#gridCell h3 {
+  font-family: 'Larish Neue';
+  font-size: 14pt;
+  font-weight: normal;
+  text-align: left;
+}
+
+#gridCell p {
+  font-family: 'Acumin-Pro', Helvetica, Arial;
+  font-size: 10pt;
+  text-align: left;
+}
+
+#gridCell .topImage {
+  margin-bottom: 10px;
 }
 
 
