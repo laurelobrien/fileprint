@@ -12,6 +12,11 @@
   src: url('../fonts/PantonIcons-BRegular.otf') format('opentype')
 }
 
+@font-face {
+  font-family: 'Panton Icons A';
+  src: url('../fonts/PantonIcons-ARegular.otf') format('opentype')
+}
+
 /* Global Styles
 ----------------------------*/
 @media all {
@@ -63,7 +68,7 @@ a {
 
 p {
   font-family: 'Acumin-Pro', Helvetica, Arial;
-  font-size: 14pt;
+  font-size: 12pt;
   line-height: 140%;
   text-align: justify;
 }
@@ -124,9 +129,17 @@ li {
   width: 100%;
 }
 
-.icon {
+.iconA {
+  font-family: 'Panton Icons A';
+  font-size: inherit;
+  text-transform: none;
+  font-size: 20pt;
+}
+
+.iconB {
   font-family: 'Panton Icons B';
   font-size: inherit;
+  font-size: 20pt;
 }
 
 
@@ -250,6 +263,10 @@ img {
   font-weight: normal;
   text-align: left;
   margin-top: 30px;
+}
+
+#indexcontent h2 span {
+  margin-left: 20px;
 }
 
 #gridCell p {
