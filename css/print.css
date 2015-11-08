@@ -1,11 +1,71 @@
 @media print {
 
-  .page-break {
-    display: block;
-    page-break-before: always;
-  }
+/* Fonts
+-----------------------------*/
+@font-face {
+  font-family: 'Larish Neue';
+  src: url('../fonts/larish.eot');
+  src: url('../fonts/larish.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/larish.woff') format('woff'),
+       url('../fonts/larish.ttf')  format('truetype'),
+       url('../fonts/larish.svg#svgLarish') format('svg');
+}
 
-  .no-print {
-    display: none;
-  }
+@font-face {
+  font-family: 'Panton Icons B';
+  src: url('../fonts/PantonIcons-BRegular.otf') format('opentype')
+}
+
+@font-face {
+  font-family: 'Panton Icons A';
+  src: url('../fonts/PantonIcons-ARegular.otf') format('opentype')
+}
+
+
+/* Typography
+-----------------------------*/
+h1, h2, h3 {
+  font-family: 'Larish Neue', Garamond, Georgia;
+  font-weight: normal;
+}
+
+a {
+  border: none;
+}
+
+
+/* Hide / Show
+-----------------------------*/
+.printOnly {
+  display: block;
+}
+
+.pageBreak {
+  display: block;
+  page-break-before: always;
+}
+
+.noPrint {
+  display: none;
+}
+
+.footNotes {
+  display: block;
+}
+
+.footNumbers {
+  display: inline;
+}
+
+
+/* Header
+-----------------------------*/
+#mainBody header {
+  width: 50%;
+  margin-left: 20%;
+}
+
+
+
+
 }

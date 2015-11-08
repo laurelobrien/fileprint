@@ -19,7 +19,7 @@
 
 /* Global Styles
 ----------------------------*/
-@media all {
+@media screen {
   .page-break {
     display: none;
   }
@@ -232,7 +232,7 @@ img {
   margin-right: 25%;
 }
 
-#indexbody header {
+#indexBody header {
   right: 5%;
 }
 
@@ -257,7 +257,7 @@ img {
   box-shadow: 0px 14px 60px -12px rgba(0,0,0,0.7);
 }
 
-#gridCell h3 {
+#gridCell h3, #makingContent h3 {
   font-family: 'Larish Neue';
   font-size: 14pt;
   font-weight: normal;
@@ -280,19 +280,29 @@ img {
 }
 
 
-/* Captions and Pull-Quotes
+
+/* Making This Book
 ----------------------------*/
-.caption {
-  width: 20%;
+#makingContent h3 {
+  margin: 0;
 }
 
-.caption p {
-  font-style: italic;
-  font-size: 10pt;
-  text-align: right;
+#gridCellWide {
+  width: 60%;
 }
 
-.caption hr {
-  border-top: 2px #1500a2 solid;
-  border-bottom: none;
+#gridCellNarrow {
+  width: 30%;
+}
+
+#makingContent img {
+  margin: 50px 0 30px 0;
+}
+
+
+
+/* Hide / Show
+----------------------------*/
+.printOnly {
+  display: none;
 }
