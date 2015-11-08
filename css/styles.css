@@ -306,3 +306,7 @@ img {
 .printOnly {
   display: none;
 }
+
+.pageBreak, .blankPage {
+  display: none;
+}

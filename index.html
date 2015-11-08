@@ -4,26 +4,40 @@
 <head>
     <title>Publication</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/normalize.css" rel="stylesheet" media="screen">
+    <link href="css/normalize.css" rel="stylesheet" media="screen, print">
     <link href="css/styles.css" rel="stylesheet" media="screen">
     <link href="css/print.css" rel="stylesheet" media="print">
 </head>
 
 <body id="mainBody">
+<div id="stickyWrapper">
+
+  <!-- blank page -->
+  <div class="blankPage">.</div>
+
+  <div id="titlePage" class="printOnly pageBreak container">
+    <h1>file > print</h1>
+    <h3>An overview of how (and why) to make your website print like a book. <span>Or zine. Or pamphlet. Or hand-out. Or origami sculpture.<br>Or __________.</span></h3>
+    <h3 id="author">Laurel O'Brien</h3>
+  </div>
+
+  <!-- blank page -->
+  <div class="blankPage">.</div>
 
   <header>
 
     <div id="sidebar">
-      <h1>file > print</h1>
+      <h1 class="noPrint">file > print</h1>
+      <h1 class="printOnly">table of contents</h1>
       <nav>
         <ul>
-          <li><a href="">introduction</a></li>
-          <li><a href="">history of web publication</a></li>
-          <li><a href="">web vs. print</a></li>
-          <li><a href="">@media</a></li>
-          <li><a href="making-this-book.html">making this book</a></li>
-          <li><a href="">making your own book</a></li>
-          <li><a href="book-index.html">index</a></li>
+          <li><a href=""><span class="printOnly">01.</span>introduction</a></li>
+          <li><a href=""><span class="printOnly">02.</span>history of web publication</a></li>
+          <li><a href=""><span class="printOnly">03.</span>web vs. print</a></li>
+          <li><a href=""><span class="printOnly">04.</span>@media</a></li>
+          <li><a href="making-this-book.html"><span class="printOnly">05.</span>making this book</a></li>
+          <li><a href=""><span class="printOnly">06.</span>making your own book</a></li>
+          <li><a href="book-index.html"><span class="printOnly">07.</span>index</a></li>
         </ul>
       </nav>
     </div>
@@ -32,8 +46,6 @@
   <div class="pageBreak"></div>
 
   <div class="container" id="maincontent">
-
-    <h1 class="printOnly">@MEDIA PRINT TEST</h1>
 
     <h2 class="fullJustify">When was the last time you printed a webpage?</h2>
     
@@ -48,7 +60,7 @@
     <p>
       It was probably to print a recipe or set of instructions. Maybe it was a google doc, complete with URL detritus along the footer. Onet volupta corro to temporem cuptas diam susapitem corem reictur, num vid ut libus ipsunt volendam qui que nimolumquasi blamet dolorei˚ ctatur aut exped et libusci maximet, nos auda voluptate suntem di comniet magniasite que quaerit poreheni quiditam rem same ipsum audit optur sentium versped moloritio ipsus illor reperupturit optaesc illigenime nonsequi temporu ptatur?
     </p>
-    <p>Genimus et <a href="#">doloribus</a>˚.</p>
+    <p>Genimus et <a href="#">doloribus</a><span class="printOnly footNumber">1</span><span class="noPrint">˚</span>.</p>
     <p>
       Parum quam volupta tesciliquam utatius acearia porum quia voluptas ma conseruptur aut utemporum consequaspis eos volupissit vendene corenit et as adi arumqui ditio conseque sit, quas volorumquia explab imus exernatis aute sequis iur am vent, eos estio. Atibus antem re volupta di ipsaper fernatio te dolorep remporrum qui oditatios a sum dem vendae min earumquatur re, sequam fugita cus.
     </p>
@@ -67,6 +79,18 @@
 
   </div>
   </div>
+
+</div> <!-- end of #stickyWrapper -->
+
+  <footer class="printOnly pageBreak">
+    <div class="container">
+      <hr>
+      <ol>
+        <li>Link summary here blah blah. http://google.com</li>
+        <li>Link summary here blah blah. There's some interesting info the reader should look up. http://canopycanopycanopy.com</li>
+      </ol>
+    </div>
+  </footer>
 
 </body>
 

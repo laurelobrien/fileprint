@@ -22,25 +22,159 @@
 }
 
 
+
+/* Global Styles
+-----------------------------*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 200px; /* bottom = footer height */
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+.dropshadow {
+  -webkit-box-shadow: 0px 14px 60px -12px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0px 14px 60px -12px rgba(0,0,0,0.7);
+  box-shadow: 0px 14px 60px -12px rgba(0,0,0,0.7);
+}
+
+#imageStack {
+  position: relative;
+}
+
+#seqIcons {
+  position: absolute;
+  width: 75%;
+  position: absolute;
+  top: 35%; left: 12.5%;
+}
+
+
+
+
 /* Typography
 -----------------------------*/
-h1, h2, h3 {
+h1, h2, h3, ul {
   font-family: 'Larish Neue', Garamond, Georgia;
   font-weight: normal;
 }
 
+h1 {
+  font-size: 30pt;
+}
+
+h2 {
+  font-size: 22pt;
+}
+
 a {
   border: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-family: 'Acumin-Pro', Helvetica, Arial;
+  font-size: 12pt;
+}
+
+
+/* Table of Contents
+-----------------------------*/
+#mainBody header {
+  width: 50%;
+  margin: 250px 0 0 15%;
+  text-align: left;
+}
+
+#mainBody nav ul {
+  list-style: none;
+  margin: 50px 0 0 0;
+  padding: 0;
+}
+
+#mainBody nav li {
+  font-family: 'Acumin-Pro', Helvetica, Arial;
+  font-size: 12pt;
+  margin: 10px 0;
+  padding: 0;
+}
+
+#mainBody li span {
+  font-family: 'Larish Neue', Garamond, Georgia;
+  font-size: inherit;
+  display: inline;
+  margin-right: 30px;
+}
+
+
+/* Title Page
+-----------------------------*/
+#titlePage.container {
+  width: 40%;
+}
+
+#titlePage {
+  text-align: center;
+}
+
+#titlePage h1 {
+  font-size: 42pt;
+  margin: 200px 0 60px 0;
+}
+
+#titlePage h3 {
+  font-size: 10pt;
+  font-family: 'Acumin-Pro', Helvetica, Arial;
+  font-style: italic;
+}
+
+#titlePage h3#author {
+  font-family: 'Larish Neue', Garamond, Georgia;
+  margin-top: 200px;
+  font-style: normal;
+  text-transform: lowercase;
+}
+
+#titlePage h3 span {
+  font-style: italic;
+}
+
+
+/* Footer
+-----------------------------*/
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+}
+
+ol {
+  margin: 0;
 }
 
 
 /* Hide / Show
 -----------------------------*/
-.printOnly {
+.pageBreak {
   display: block;
+  page-break-after: always;
 }
 
-.pageBreak {
+.pageBreakBefore {
   display: block;
   page-break-before: always;
 }
@@ -53,19 +187,21 @@ a {
   display: block;
 }
 
-.footNumbers {
-  display: inline;
+.footNumber {
+  vertical-align: super;
+  font-size: 8pt;
+}
+
+.blankPage {
+  color: #ffffff;
+  page-break-before: always;
+  page-break-after: always;
 }
 
 
-/* Header
------------------------------*/
-#mainBody header {
-  width: 50%;
-  margin-left: 20%;
-}
 
 
 
 
-}
+
+} /* end of @media print */
