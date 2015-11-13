@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Larish Neue';
+  font-family: 'Filler';
   src: url('../fonts/larish.eot');
   src: url('../fonts/larish.eot?#iefix') format('embedded-opentype'),
        url('../fonts/larish.woff') format('woff'),
@@ -32,7 +32,7 @@ body {
 }
 
 .container {
-  width: 50%;
+  width: 45%;
   box-sizing: border-box;
   margin: auto 35% auto auto;
   text-align: left;
@@ -55,6 +55,12 @@ body {
   box-shadow: 0px 14px 60px -12px rgba(0,0,0,0.7);
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 85px 0 0 0;
+}
+
 
 /* Typography
 ----------------------------*/
@@ -67,10 +73,14 @@ a {
 }
 
 p {
-  font-family: 'Acumin-Pro', Helvetica, Arial;
-  font-size: 12pt;
+  font-family: 'FreightText', Helvetica, Arial;
+  font-size: 14pt;
   line-height: 140%;
   text-align: justify;
+}
+
+p a::after {
+  content: '˚';
 }
 
 p a:hover {
@@ -80,9 +90,9 @@ p a:hover {
 }
 
 h1 {
-  font-family: 'Larish Neue', Courier;
+  font-family: 'Apercu Pro', Courier;
   font-size: 22pt;
-  font-weight: normal;
+  font-weight: bold;
   padding: 5px 5px 5px 7px;
   display: inline-block;
 }
@@ -93,14 +103,14 @@ h1 a, h2 a, h3 a, .noUnderline {
 }
 
 h2 {
-  font-family: 'Larish Neue';
+  font-family: 'Apercu Pro';
   text-transform: lowercase;
   font-size: 22pt;
   font-weight: normal;
 }
 
 li {
-  font-family: 'Larish Neue';
+  font-family: 'Apercu Pro';
   font-size: 1em;
 }
 
@@ -194,15 +204,9 @@ li a {
 }
 
 #maincontent h2 {
-  font-size: 32pt;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-#recipe-old {
-  width: 48%;
-  display: inline;
-  border: 1px solid #1500a2;
+  font-size: 24pt;
+  margin: 25px 0 0 0;
+  text-align: left;
 }
 
 img {
@@ -210,18 +214,8 @@ img {
 }
 
 #seqIcons {
-  width: 75%;
-  position: absolute;
-  top: 35%; left: 12.5%;
-}
-
-#magStack {
-  opacity: 0.6;
-}
-
-#imageStack {
-  position: relative;
-  margin: auto 0 50px 0;
+  margin: 100px auto;
+  text-align: center;
 }
 
 
@@ -258,7 +252,7 @@ img {
 }
 
 #gridCell h3, #makingContent h3 {
-  font-family: 'Larish Neue';
+  font-family: 'Apercu Pro';
   font-size: 14pt;
   font-weight: normal;
   text-align: left;
@@ -270,7 +264,7 @@ img {
 }
 
 #gridCell p {
-  font-family: 'Acumin-Pro', Helvetica, Arial;
+  font-family: 'FreightText', Helvetica, Arial;
   font-size: 10pt;
   text-align: left;
 }
@@ -279,6 +273,17 @@ img {
   margin-bottom: 10px;
 }
 
+
+/* Glossary
+-----------------------------*/
+#glossContent li {
+  font-family: 'FreightText', Helvetica, Arial;
+  margin: 30px 0;
+}
+
+#glossContent li b {
+  font-family: 'Apercu Pro', Garamond, Georgia;
+}
 
 
 /* Making This Book

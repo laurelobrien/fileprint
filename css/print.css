@@ -167,6 +167,13 @@ ol {
 }
 
 
+/* Glossary
+-----------------------------*/
+li b {
+  font-family: 'Larish Neue', Garamond, Georgia;
+}
+
+
 /* Hide / Show
 -----------------------------*/
 .pageBreak {
@@ -189,13 +196,17 @@ ol {
 
 .footNumber {
   vertical-align: super;
-  font-size: 8pt;
+  font-size: 7pt;
 }
 
 .blankPage {
   color: #ffffff;
   page-break-before: always;
   page-break-after: always;
+}
+
+p a::after {
+  content: none;
 }
 
 
