@@ -19,21 +19,18 @@
 
 /* Global Styles
 ----------------------------*/
-@media screen {
-  .page-break {
-    display: none;
-  }
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  padding: 95px 50px;
   text-align: left;
   color: #000000;
 }
 
 .container {
   width: 45%;
-  box-sizing: border-box;
   margin: auto 35% auto auto;
   text-align: left;
 }
@@ -93,7 +90,7 @@ h1 {
   font-family: 'Apercu Pro', Courier;
   font-size: 22pt;
   font-weight: bold;
-  padding: 5px 5px 5px 7px;
+  padding: 5px 5px 5px 0;
   display: inline-block;
 }
 
@@ -182,25 +179,16 @@ li a {
 }
 
 
-/* Header
-----------------------------*/
-
-#stepbystep {
-  margin: 90px auto 90px auto;
-}
-
-#stepbystep img {
-  width: 15%;
-}
-
-#stepbystep #arrows {
-  width: 9%;
-}
-
 /* Main Content
 ----------------------------*/
 #maincontent {
-  margin: auto 35% auto auto;
+  margin: 0 35% auto auto;
+}
+
+#mainWrapper {
+  background-color: #ffffff;
+  margin: -25px 0 0 0;
+  padding: 122px 0 0 0;
 }
 
 #maincontent h2 {
