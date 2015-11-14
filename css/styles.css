@@ -64,6 +64,14 @@ ul {
   margin: 85px 0 0 0;
 }
 
+textarea {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+}
+
 
 /* Typography
 ----------------------------*/
@@ -183,12 +191,16 @@ nav ul {
 }
 
 li {
-  margin: 17px 0;
+  margin: 20px 0;
   padding: 0;
 }
 
 li a {
   border: none;
+}
+
+li a:hover {
+  border-bottom: 1px #000000 solid;
 }
 
 
@@ -226,12 +238,12 @@ img {
   background-color: #DCFAF3;
 }
 
-#indexContent {
+#furtherContent {
   width: 60%;
   margin: auto 30% auto auto;
 }
 
-#indexContent>div {
+#furtherContent>div {
   margin-bottom: 50px;
 }
 
@@ -260,7 +272,7 @@ img {
   margin-top: 30px;
 }
 
-#indexContent h2 span {
+#furtherContent h2 span {
   margin-left: 20px;
 }
 
@@ -292,10 +304,6 @@ img {
   clear: both;
 }
 
-#glossContent ul {
-  display: block;
-}
-
 #glossContent li p {
   width: 70%;
   float: right;
@@ -311,6 +319,15 @@ img {
   float: left;
   text-align: left;
   width: 27%;
+}
+
+p span {
+  font-family: 'Apercu Mono', Courier;
+  font-size: 12pt;
+  display: block;
+  margin: 15px 0;
+  padding: 5px 0 5px 20px;
+  background-color: #ffffff;
 }
 
 

@@ -32,7 +32,7 @@
         <ul>
           <li><a href=""><span class="printOnly">01.</span>introduction</a></li>
           <li><a href=""><span class="printOnly">02.</span>history of web publication</a></li>
-          <li><a href=""><span class="printOnly">03.</span>web vs. print</a></li>
+          <li><a href=""><span class="printOnly">03.</span>what changes: web vs. print</a></li>
           <li><a href=""><span class="printOnly">04.</span>@media</a></li>
           <li><a href="making-this-book.html"><span class="printOnly">05.</span>making this book</a></li>
           <li><a href=""><span class="printOnly">06.</span>making your own book</a></li>
@@ -82,7 +82,7 @@
     <div class="container" id="makingContent">
 
       <h2 class="chapterTitle">
-        making this book <span class="iconA">N</span>
+        making this book
       </h2>
 
         <img class="dropShadow" src="images/making/screenshot_fileprint.png">
@@ -97,7 +97,7 @@
 
   <!-- FURTHER READING -->
   <div id="furtherReading" class="sectionWrapper">
-  <div class="container" id="indexContent">
+  <div class="container" id="furtherContent">
 
     <h2 class="chapterTitle">
       Recommended Reading <span class="iconB">f</span>
@@ -200,7 +200,19 @@
     
     <ul>
       <li>
-        <h3>Perfect Binding</h3> <p>binding a book by aligning loose leafs along their intended spine and applying glue, usually with a brush or palette knife. Thick magazines and soft-cover books are usually bound this way. A cover and even a dustjacket can be added.</p>
+        <h3>HTML</h3>
+        <p>stands for <i>Hyper Text Markup Language</i>. HTML is the base language websites are written in. Content is wrapped in "tags" that indicate to the browser what sort of element it is, such as a header, footer, link, etc.</p>
+      </li>
+      <li>
+        <h3>CSS</h3> <p>stands for <i>Cascading Style Sheet</i>. CSS is a coding language that selects elements in a website's HTML and dictates what that element should look like and how it affects other elements. Giving the header a white background with text inside it aligned to the right would look like:
+        <span>header {<br>
+          &nbsp;&nbsp;background-color: #ffffff;<br>
+          &nbsp;&nbsp;text-align: right;<br>
+        }</span>
+        HTML is the content, and CSS is how it looks.</p>
+      </li>
+      <li>
+        <h3>Perfect Binding</h3> <p>method of binding a book by aligning loose sheets of paper along their intended spine and applying glue, usually with a brush or palette knife. Thick magazines and soft-cover books are usually bound this way. A cover and even a dust-jacket can be added.</p>
       </li>
       <li>
         <h3>Section</h3> <p>the "section" of paper you fold together like a taco to create facing pages. Usually this is for smythe-sewn binding but sometimes perfect binding too. Sections are stacked and sewn together or otherwise bound through their fold edges. Some forms of Japanese binding face the section fold towards the fore-edge of the book to keep pages double-layered, usually because of the use of extremely thin paper. </p>
@@ -215,31 +227,12 @@
         <h3>Tail</h3> <p>the bottom edge of a page.</p>
       </li>
       <li>
-        <h3>Media Query</h3> <p>a CSS statement that asks a browser what media it's serving content to, such as screen or print, and applies the requisite styles. Media queries can also specify device size such as (@media screen) and (max-width < 480px), meaning "apply these styles for a screen less than 480px wide".</p>
+        <h3>Media Query</h3> <p>a CSS statement that asks a browser what device or media the browser is serving your content to, such as screen or print. All the styles wrapped inside the query will apply if the media matches its rules; a media query of <span>@media screen and max-width < 480px</span> will have its styles applied to the page if the device is a screen and less than 480 pixels wide, such as an iPhone 5 or most Android devices.</p>
       </li>
     </ul>
 
-    <!--<ul>
-      <li><b>Perfect Binding</b> — binding a book by aligning loose leafs along their intended spine and applying glue, usually with a brush or a glue knife. Thick magazines and soft-cover books are usually bound this way. A cover and even a dustjacket can be added.</li>
-      <li><b>Section</b> — the "section" of paper you fold together like a taco to create facing pages. Usually this is for smythe-sewn binding but sometimes perfect binding too. Sections are stacked and sewn together or otherwise bound through their fold edges. Some forms of Japanese binding face the section fold towards the fore-edge of the book to keep pages double-layered, usually because of the use of extremely thin paper.</li>
-      <li><b>Fore-edge</b> — the edge of a page that faces away from the spine. This is the edge you usually grab to turn the page.</li>
-      <li><b>Head</b> — the top edge of a page.</li>
-      <li><b>Tail</b> — the bottom edge of a page.</li>
-      <li><b>Media Query</b> — a CSS statement that asks a browser what media it's serving content to, such as screen or print, and applies the requisite styles. Media queries can also specify device size such as (@media screen) and (max-width < 480px), meaning "apply these styles for a screen less than 480px wide".</li>
-    </ul> -->
-
   </div>
   </div>
-
-  <footer class="printOnly pageBreak">
-    <div class="container">
-      <hr>
-      <ol>
-        <li>Link summary here blah blah. http://google.com</li>
-        <li>Link summary here blah blah. There's some interesting info the reader should look up. http://canopycanopycanopy.com</li>
-      </ol>
-    </div>
-  </footer>
 
 </body>
 
