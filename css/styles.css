@@ -276,13 +276,33 @@ img {
   background-color: #FAE3DC;
 }
 
+#glossContent {
+  overflow: auto;
+}
+
 #glossContent li {
   font-family: 'FreightText', Helvetica, Arial;
   margin: 30px 0;
+  font-size: 14pt;
+  clear: both;
 }
 
-#glossContent li b {
+#glossContent ul {
+  display: block;
+}
+
+#glossContent li p {
+  width: 67%;
+  float: right;
+  padding-top: 1px;
+}
+
+#glossContent li h3 {
   font-family: 'Apercu Pro', Garamond, Georgia;
+  font-size: inherit;
+  font-weight: normal;
+  float: left;
+  width: 30%;
 }
 
 
