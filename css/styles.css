@@ -54,7 +54,7 @@ body {
 
 .sectionWrapper {
   margin: 0;
-  padding: 80px 0;
+  padding: 150px 0;
   width: 100%;
 }
 
@@ -84,6 +84,10 @@ p {
 
 p a::after {
   content: '˚';
+}
+
+p a:after {
+  border: none;
 }
 
 p a:hover {
@@ -118,7 +122,8 @@ li {
 }
 
 .chapterTitle {
-  margin-bottom: 70px;
+  font-size: 24pt;
+  margin: 0 0 100px 0;
 }
 
 .small-caps {
@@ -161,9 +166,9 @@ li {
 header {
   width: 15%;
   position: fixed;
-  top: 100px; right: 8%;
+  top: 100px; right: 5%;
   background-color: #ffffff;
-  padding: 10px 20px 20px 25px;
+  padding: 10px 10px 20px 25px;
 }
 
 nav {
@@ -215,18 +220,18 @@ img {
 }
 
 
-/* Index
+/* Further Reading
 ----------------------------*/
-#indexcontent {
-  width: 70%;
-  margin-right: 25%;
+#furtherReading {
+  background-color: #DCFAF3;
 }
 
-#indexBody header {
-  right: 5%;
+#indexContent {
+  width: 60%;
+  margin: auto 30% auto auto;
 }
 
-#indexcontent>div {
+#indexContent>div {
   margin-bottom: 50px;
 }
 
@@ -255,13 +260,13 @@ img {
   margin-top: 30px;
 }
 
-#indexcontent h2 span {
+#indexContent h2 span {
   margin-left: 20px;
 }
 
 #gridCell p {
   font-family: 'FreightText', Helvetica, Arial;
-  font-size: 10pt;
+  font-size: 12pt;
   text-align: left;
 }
 
@@ -311,6 +316,15 @@ img {
 
 /* Making This Book
 ----------------------------*/
+#making-this-book {
+  background-color: #FAEDDC;
+}
+
+#makingContent {
+  width: 60%;
+  margin: auto 30% auto auto;
+}
+
 #makingContent h3 {
   margin: 0;
 }
@@ -321,10 +335,6 @@ img {
 
 #gridCellNarrow {
   width: 30%;
-}
-
-#makingContent img {
-  margin: 50px 0 30px 0;
 }
 
 
