@@ -50,10 +50,10 @@
 
     <h2>When was the last time you printed a webpage?</h2>
     
-    <img id="seqIcons" src="svg/sequence_icons.svg">
+    <img id="seqIcons" src="svg/fileprint_headericons.svg">
 
     <p>
-      It was probably to print a recipe or set of instructions. Maybe it was a google doc, complete with URL detritus along the footer. Onet volupta corro to temporem cuptas diam susapitem corem reictur, num vid ut libus ipsunt volendam qui que nimolumquasi blamet dolorei˚ ctatur aut exped et libusci maximet, nos auda voluptate suntem di comniet magniasite que quaerit poreheni quiditam rem same ipsum audit optur sentium versped moloritio ipsus illor reperupturit optaesc illigenime nonsequi temporu ptatur?
+      It was probably to print a recipe or set of instructions. Maybe it was a google doc, complete with URL detritus along the footer. Onet volupta corro to temporem cuptas diam susapitem corem reictur, num vid ut libus ipsunt volendam qui que nimolumquasi blamet <a href="#">dolorei</a> ctatur aut exped et libusci maximet, nos auda voluptate suntem di comniet magniasite que quaerit poreheni quiditam rem same ipsum audit optur sentium versped moloritio ipsus illor reperupturit optaesc illigenime nonsequi temporu ptatur?
     </p>
     <p>Genimus et <a href="#">doloribus</a><span class="printOnly footNumber">1</span>.</p>
     <p>
@@ -85,10 +85,43 @@
         making this book
       </h2>
 
+      <div class="splitColumn" id="noHeadline">
+        <p>You can always print this book as a stack of pages to be stapled together. That’s the most common application of printing a webpage and it should suit you just fine. If that’s what you want to do, you should <a href="">load the US letter size version of the @media print stylesheet</a>, because its text has been sized to be 10pt, a comfortable reading size when printed on 8.5" by 11".</p>
+
+        <p>Unfortunately, it’s not possible to dictate different stylesheets depending on the final output size of your page. File > Print… is something your browser handles, and it will always assume you are printing on letter size paper. Who wants to print some weird small size like 4" by 5.5"?</p>
+
+        <p>We do.</p>
+
+        <p>Because of this, the default print stylesheet for this website has upscaled text to be <i>optically</i> 10pt in size even when you scale the page down by 50% to fit two pages on one sheet of paper. Browsers render text live so if a stylesheet says paragraph text is 10pt in size, it will always come out that way. But if you enter the print dialogue and say you want 2 pages per letter-size sheet, your printer will not treat text like text (which <i>should</i> be to re-flow 10pt text into more pages because there's less space per page now, much like dragging your browser window to make it narrower). It will downsize the whole thing and 10pt text will print like 5pt text; the whole layout will be identical to the letter-size version, just <i>smaller</i>. You've probably noticed this effect if you've visited a website on your phone that had a fixed font size, so when you visited it on a screen 480px wide instead of the anticipated 1280+, the text is absolutely miniscule.</p>
+
+        <p>In case that didn't make any sense to you, worry not. If you want to go beyond corner-stapling and bind yourself a book about web publication, spine and all, it's all been set up for you.
+      </div>
+
+      <div class="splitColumn">
+        <h3>Perfect binding with sections</h3>
+
+        <p>Perfect binding is a method of bookbinding you’ve probably interacted with a <i>lot</i>. It’s used for every magazine with a thick, flat spine and most soft-cover books. It’s also incredibly simple once you have your pages printed and folded and can be used to bind all sorts of paper configurations if you need something held together in a pinch and you’re allergic to staples. </p>
+
+        <h3>You will need</h3>
+        <ul>
+          <li>Printer that can print double-sided (or “duplex”)</li>
+          <li>PVA glue (you know, the cheap white stuff you used in elementary school)</li>
+          <li>Bulldog clips, a big hair clip, or a chip-bag clip</li>
+          <li>Paintbrush, one you’re not too attached to</li>
+        </ul>
+      </div>
+
+      <div class="fiftyBlock">
         <img class="dropShadow" src="images/making/screenshot_fileprint.png">
         <h3>
           Navigate to File > Print... in your browser's menu.
         </h3>
+      </div>
+      <div class="fiftyBlock">
+        <img class="dropShadow" src="images/making/print_dialogue.png" alt="">
+        <h3>Click "Print using System Dialogue..." and change the settings so pages are printing per sheet.</h3>
+        <p>The system dialogue is your computer's method of printing documents, instead of the browsers, which usually means more custom options. A lot of control has been relinquished by your browser now, and we're limited to what the printer and your OS know how to do.</p>
+      </div>
 
     </div> <!-- end of #makingContent -->
   </div> <!-- end of #making-this-book -->
@@ -116,7 +149,7 @@
           </h3>
         </a>
         <p>
-          <i>Triple Canopy</i> is a web-first magazine that puts out print compendiums of its online content as a means of archival rather than as a primary format.
+          <i>Triple Canopy</i> is a web-first magazine that puts out print compendiums of its online content as a means of archival rather than as a primary format. Its articles scroll horizontally, with columns and images re-flowed to fit your viewport.
         </p>
       </div>
 
@@ -128,7 +161,7 @@
           </h3>
         </a>
         <p>
-          <i>Flaneur</i>, named after the French word for the modern, meandering "man of the streets", examines one city-street each issue with a literary focus. It has a section of web-specific content called the <i><a href="http://flaneur-magazine.com/unprintables/">Unprintables</a></i>, taking advantage of the multi-media abilities of our computers.
+          <i>Flaneur</i>, named for the French concept of the modern, meandering “man of the streets”, examines one city-street each issue with a literary focus. It has a section of web-specific content called the <i><a href="http://flaneur-magazine.com/unprintables/">Unprintables</a></i>, taking advantage of the multi-media abilities of our computers.
         </p>
       </div>
 
@@ -141,7 +174,7 @@
           </h3>
         </a>
         <p>
-          <i>Uncube</i> is a Berlin-based architectural magazine that puts out a monthly issue much like print mags, but keeps them entirely online. Articles can be browsed by thumbnail, an attractive feature of hyperlinks.
+          <i>Uncube</i> is a Berlin-based architectural magazine that puts out a monthly issue much like print magazines, but keeps them entirely online. Articles can be browsed by thumbnail, an attractive feature of hyperlinks.
         </p>
       </div>
 
@@ -167,7 +200,7 @@
           </h3>
         </a>
         <p>
-          <i>The Binder and the Server</i> is an essay by senior editor of <i>Triple Canopy</i> Colby Chamberlain, published in № 4 of <i><a href="http://artjournal.collegeart.org/">Art Journal's</a></i> 2011 volume. It is the result of discussion among members of Triple Canopy about how and why they tackle the medium of web publication, and what has changed since a generation raised with the internet took to their places in the publishing world.
+          <i>The Binder and the Server</i> is an essay by senior editor of <i>Triple Canopy</i> Colby Chamberlain, published in <i><a href="http://artjournal.collegeart.org/">Art Journal's</a></i> Winter 2011 volume. It is the result of discussion among members of Triple Canopy about how and why they tackle the medium of web publication, and what has changed since a generation raised with the internet took to their places in the publishing world.
         </p>
       </div>
 
@@ -201,7 +234,7 @@
     <ul>
       <li>
         <h3>HTML</h3>
-        <p>stands for <i>Hyper Text Markup Language</i>. HTML is the base language websites are written in. Content is wrapped in "tags" that indicate to the browser what sort of element it is, such as a header, footer, link, etc.</p>
+        <p>stands for <i>Hyper Text Markup Language</i>. HTML is the base language websites are written in. Content is wrapped in “tags” that indicate to the browser what sort of element it is, such as a header, footer, link, etc.</p>
       </li>
       <li>
         <h3>CSS</h3> <p>stands for <i>Cascading Style Sheet</i>. CSS is a coding language that selects elements in a website's HTML and dictates what that element should look like and how it affects other elements. Giving the header a white background with text inside it aligned to the right would look like:
@@ -215,7 +248,7 @@
         <h3>Perfect Binding</h3> <p>method of binding a book by aligning loose sheets of paper along their intended spine and applying glue, usually with a brush or palette knife. Thick magazines and soft-cover books are usually bound this way. A cover and even a dust-jacket can be added.</p>
       </li>
       <li>
-        <h3>Section</h3> <p>the "section" of paper you fold together like a taco to create facing pages. Usually this is for smythe-sewn binding but sometimes perfect binding too. Sections are stacked and sewn together or otherwise bound through their fold edges. Some forms of Japanese binding face the section fold towards the fore-edge of the book to keep pages double-layered, usually because of the use of extremely thin paper. </p>
+        <h3>Section</h3> <p>the “section” of paper you fold together like a taco to create facing pages. Usually this is for smythe-sewn binding but sometimes perfect binding too. Sections are stacked and sewn together or otherwise bound through their fold edges. Some forms of Japanese binding face the section fold towards the fore-edge of the book to keep pages double-layered, usually because of the use of extremely thin paper. </p>
       </li>
       <li>
         <h3>Fore-edge</h3> <p>the edge of a page that faces away from the spine. This is the edge you usually grab to turn the page.</p>
