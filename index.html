@@ -43,7 +43,9 @@
     </div>
 
   </header>
-  <div class="pageBreak"></div>
+
+  <!-- blank page -->
+  <div class="blankPage">.</div>
 
   <div id="mainWrapper" class="sectionWrapper">
   <div class="container" id="mainContent">
@@ -77,66 +79,99 @@
 
   <div class="pageBreak">.</div>
 
+
+  <!-- WEB VS. PRINT -->
+  <div id="versus" class="sectionWrapper">
+    <div class="container" id="versusContent">
+      <h2 class="chapterTitle">Web vs. Print</h2>
+
+      <p>
+        Uptas ut iusciliciasi doluptatum qui undit liquasp edisquam dolesti aut omnim evelesc iatest, sitatem. Et et estis ad utasperum aborpos nonessim excerrunt et aut inciatium experes vendus evenectem sam dolo dit quat deleste ipit quia iusae prerro testo et est aut et pore arum, omniam.
+      </p>
+      <p>
+        Si nost voloratis debitat incium nos aut acessi reptatur?
+      <p>
+        It etum fuga. Itatem sumquas eium nus esti ulparch iliquas net alis dendebit oditatis dolore ressimaio offic temolo il maximus atiorempori re nos mosam reperorest expelib usanti officit asperor uptassi oditectus et voluptatist fuga. Ero blam, temos re, ventinulpa voluptiate dolori re dolut eseque quidit, quati doluptatquae cusae dem aut alia volupta tquiaepudita nonecul landucim inullia volestium facepro vitati consequis eatemporeris assequi tendereicid et et vollant.
+      </p>
+    </p>
+    </div>
+  </div>
+
+  <!-- blank page -->
+  <div class="pageBreak"></div>
+
   <!-- MAKING THIS BOOK -->
-  <div id="making-this-book" class="sectionWrapper">
+  <div id="making-this-book" class="sectionWrapper noPrint">
     <div class="container" id="makingContent">
 
       <h2 class="chapterTitle">
         making this book
       </h2>
 
-      <div class="splitColumn" id="noHeadline">
         <p>You can always print this book as a stack of pages to be stapled together. That’s the most common application of printing a webpage and it should suit you just fine. If that’s what you want to do, you should <a href="">load the US letter size version of the @media print stylesheet</a>, because its text has been sized to be 10pt, a comfortable reading size when printed on 8.5" by 11".</p>
 
         <p>Unfortunately, it’s not possible to dictate different stylesheets depending on the final output size of your page. File > Print… is something your browser handles, and it will always assume you are printing on letter size paper. Who wants to print some weird small size like 4" by 5.5"?</p>
 
         <p>We do.</p>
 
-        <p>Because of this, the default print stylesheet for this website has upscaled text to be <i>optically</i> 10pt in size even when you scale the page down by 50% to fit two pages on one sheet of paper. Browsers render text live so if a stylesheet says paragraph text is 10pt in size, it will always come out that way. But if you enter the print dialogue and say you want 2 pages per letter-size sheet, your printer will not treat text like text (which <i>should</i> be to re-flow 10pt text into more pages because there's less space per page now, much like dragging your browser window to make it narrower). It will downsize the whole thing and 10pt text will print like 5pt text; the whole layout will be identical to the letter-size version, just <i>smaller</i>. You've probably noticed this effect if you've visited a website on your phone that had a fixed font size, so when you visited it on a screen 480px wide instead of the anticipated 1280+, the text is absolutely miniscule.</p>
+        <p>Because of this, the default print stylesheet for this website has upscaled text to be <i>optically</i> 10pt in size even when you scale the page down by 50%, which is what will happen when we print 2 pages on one letter-size sheet.</p>
 
         <p>In case that didn't make any sense to you, worry not. If you want to go beyond corner-stapling and bind yourself a book about web publication, spine and all, it's all been set up for you.
-      </div>
 
-      <div class="splitColumn">
         <h3>Perfect binding with sections</h3>
 
-        <p>Perfect binding is a method of bookbinding you’ve probably interacted with a <i>lot</i>. It’s used for every magazine with a thick, flat spine and most soft-cover books. It’s also incredibly simple once you have your pages printed and folded and can be used to bind all sorts of paper configurations if you need something held together in a pinch and you’re allergic to staples. </p>
+        <p>Perfect binding is a method of bookbinding you’ve probably interacted with a <i>lot</i>. It’s used for every magazine with a thick, flat spine and most soft-cover books. It’s also incredibly simple once you have your pages printed and folded, and can be used to bind all sorts of paper configurations if you need something held together in a pinch without staples.</p>
 
         <h3>You will need</h3>
         <ul>
-          <li>Printer that can print double-sided (or “duplex”)</li>
-          <li>PVA glue (you know, the cheap white stuff you used in elementary school)</li>
-          <li>Bulldog clips, a big hair clip, or a chip-bag clip</li>
-          <li>Paintbrush, one you’re not too attached to</li>
+          <li>Printer that can print double-sided<br><i>or “duplex”</i></li>
+          <li>PVA glue<br><i>you know, the cheap white stuff you used in elementary school</i></li>
+          <li>Bulldog clips, a big hair clip, or a chip-bag clip<br><i>or a book press if you're already book-making inclined</i></li>
+          <li>Paintbrush<br><i>one you’re not too attached to</i></li>
         </ul>
-      </div>
 
-      <div class="fiftyBlock">
-        <img class="dropShadow" src="images/making/screenshot_fileprint.png">
-        <h3>
+
+        <h3 class="instruction">
           Navigate to File > Print... in your browser's menu.
         </h3>
-      </div>
-      <div class="fiftyBlock">
+        <img class="dropShadow" src="images/making/screenshot_fileprint.png">
+        
+        <h3 class="instruction">Click "Print using System Dialogue..." and in this new window, change the settings so 2 pages are printed per sheet.</h3>
         <img class="dropShadow" src="images/making/print_dialogue.png" alt="">
-        <h3>Click "Print using System Dialogue..." and change the settings so pages are printing per sheet.</h3>
-        <p>The system dialogue is your computer's method of printing documents, instead of the browsers, which usually means more custom options. A lot of control has been relinquished by your browser now, and we're limited to what the printer and your OS know how to do.</p>
-      </div>
+        <p>The system dialogue is your computer's method of printing documents, instead of the browser's, which usually means more custom options. A lot of control has been relinquished by your browser now, and we're limited to what the printer and your OS know how to do.</p>
+        <p>
+        On Mac OSX, changing this setting is possible in the "Layout" sub-menu.</p>
+
+        <h3 class="instruction">Make sure <i>Two-Sided</i> is ticked and in the same Layout sub-menu, select <i>Short-Edge binding</i>.</h3>
+        <img class="dropShadow" src="images/making/binding_menu.png" alt="">
+        <p>This can actually bind it on some printers, but we're just indicating how the second side should be oriented in relation to the first for printing two-sided.</p>
+
+        <h3 class="instruction">Print the whole thing and fold each page in half width-wise.</h3>
+        <img src="" alt="">
+        <p>Each one of these folded pages makes a <i>section</i>, which are stacked on top of each other inside the book. You can use these sections for <a href="">Smythe-sewn binding</a> if you're so inclined.</p> 
+        <p>The front of the sheet should be folded so its two pages touch faces, so to speak.</p>
+
+        <h3 class="instruction">Stack your sections, line them up, and clamp them in place near the folds with your clip.</h3>
+        <img src="images/making/bookpress.jpg" alt="">
+        <p>If you have a book press, the folds should stick out of the press a quarter of an inch or so. This flat plane of folded edges pressed together will form our book's spine.</p>
+
+        <h3 class="instruction">With your brush, apply three even coats glue to the flat edge of the spine, allowing to dry between each coat.</h3>
+        <img src="images/making/apply_glue.jpg" alt="">
+        <p>Ensure your folded edges are pressed close enough together that the glue bridges the tiny gaps between them. For extra strength, score the spine with an xacto knife or rough it up with fine sandpaper before applying glue—this will give it a textured surface to adhere to.</p>
 
     </div> <!-- end of #makingContent -->
   </div> <!-- end of #making-this-book -->
 
   <div class="pageBreak">.</div>
 
-  <!-- FURTHER READING -->
-  <div id="furtherReading" class="sectionWrapper">
+  <!-- FURTHER READING: WEB -->
+  <div id="furtherReading" class="sectionWrapper noPrint">
   <div class="container" id="furtherContent">
 
     <h2 class="chapterTitle">
       Recommended Reading <span class="iconB">f</span>
     </h2>
 
-    <div class="page-break"></div>
     
     <div id="flexGrid">
 
@@ -218,10 +253,33 @@
 
     </div> <!-- end flexGrid -->
   </div> <!-- end of #indexContent -->
-</div>
+  </div>
 
   <div class="pageBreak">.</div>
 
+  <!-- FURTHER READING: PRINT -->
+  <div class="sectionWrapper" id="further-reading-print">
+    <div class="container" id="frp-content">
+
+      <h2 class="chapterTitle">
+      Recommended Reading <span class="iconB">f</span></h2>
+
+      <div class="book-entry">
+        <h3>Protocol: How Control Exists After Decentralization</h3>
+        <h4>Alexander R. Galloway, 2004</h4>
+        <p><i>Protocol</i> explores and explains how strict structures and systems must exist for networks to function, and that the internet is built on <i>control</i>, not freedom. Computers are literal and indiscreet, which means those of us who interface with them must obey protocols (such as how a browser renders code or what software is installed on a user's computer) if we hope to communicate effectively. This very book follows strict CSS protocols so that something unusual and creative—printing it—is possible.</p>
+      </div>
+
+      <div class="book-entry">
+        <h3>Print is Dead. Long Live Print: The World's Best Independent Magazines</h3>
+        <h4>Ruth Jamieson, 2015</h4>
+        <p><i></i>Ruth Jamieson collected examples of independent magazines succeeding where Big Print fails in a series of case studies titled <i>Print is Dead. Long Live Print</i>. Jamieson believes that print as we knew it for hundreds of years has been slain by web publishing, but its death clears the way for new print publications to be unconcerned with immediacy, universal appeal, or competing with the internet's torrent of information. Niche, material, and innovation are king.</p>
+      </div>
+
+    </div>
+  </div> <!-- end of #further-reading-print-->
+
+  <div class="pageBreak"></div>
 
   <!-- GLOSSARY -->
   <div id="glossary" class="sectionWrapper">

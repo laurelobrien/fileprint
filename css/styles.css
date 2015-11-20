@@ -54,7 +54,7 @@ body {
 
 .sectionWrapper {
   margin: 0;
-  padding: 150px 0;
+  padding: 110px 0;
   width: 100%;
 }
 
@@ -126,7 +126,7 @@ nav li {
 }
 
 .chapterTitle {
-  font-size: 24pt;
+  font-size: 26pt;
   margin: 0 0 100px 0;
 }
 
@@ -283,6 +283,26 @@ img {
 }
 
 
+/* Further Reading: Print (delete on completion)
+----------------------------*/
+#further-reading-print h3 {
+  font-family: 'Apercu Pro', Helvetica, Arial;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+#further-reading-print h4 {
+  font-family: 'Apercu Pro', Helvetica, Arial;
+  font-weight: normal;
+  margin: 0 0 23px 0;
+  padding: 0;
+}
+
+.book-entry {
+  margin: 0 0 60px 0;
+}
+
+
 /* Glossary
 -----------------------------*/
 #glossary {
@@ -327,19 +347,27 @@ p span {
 }
 
 
+/* Web vs. Print
+----------------------------*/
+#versus {
+  background-color: #f8eab7;
+}
+
+
 /* Making This Book
 ----------------------------*/
 #making-this-book {
   background-color: #FFFFFF;
 }
 
-#makingContent {
-  width: 60%;
-  margin: auto 30% auto auto;
+#makingContent h3 {
+  margin: 50px 0 0 0;
+  font-size: 18pt;
 }
 
-#makingContent h3 {
-  margin: 0;
+#makingContent h3.instruction {
+  margin: 100px 0 0 0;
+  background-color: #FAE3DC;
 }
 
 #gridCellWide {
@@ -365,24 +393,20 @@ p span {
   margin-top: 0;
 }
 
-.splitColumn:nth-child(1n) {
-  margin-top: 0;
-}
-
-.splitColumn li {
+#makingContent li {
   font-family: 'FreightText', Garamond, Georgia;
   font-size: 14pt;
   margin: 0 0 25px 0;
   border-left: 1px #000000 solid;
   padding-left: 10px;
-  line-height: 100%;
 }
 
-.splitColumn img {
+#makingContent img {
   margin: 20px 0;
+  width: 100%;
 }
 
-.splitColumn ul {
+#makingContent ul {
   margin: 22px 0 0 0;
 }
 

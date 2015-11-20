@@ -51,7 +51,7 @@ ul {
 
 /* Typography
 -----------------------------*/
-h1, h2, h3, ul {
+h1, h2, h3 ul, h4 {
   font-family: 'Apercu Pro', Garamond, Georgia;
   font-weight: normal;
 }
@@ -155,34 +155,16 @@ p {
   text-align: center;
 }
 
+
 /* Further Reading
 -----------------------------*/
-#furtherContent img {
-  width: 100%;
+#further-reading-print h3 {
+  font-weight: bold;
 }
-
-#furtherContent #gridCell {
-  width: 48%;
-  display: inline-block;
-}
-
-#flexGrid {
-  display: inline;
-  width: 100%;
-}
-
-#gridCell h3 {
-  font-family: 'Apercu Pro';
-  font-size: 14pt;
-  font-weight: normal;
-  text-align: left;
-  margin-top: 30px;
-}
-
-#gridCell p {
-  font-family: 'FreightText', Garamond, Arial;
-  font-size: 12pt;
-  text-align: left;
+#further-reading-print h4 {
+  margin: 0;
+  padding: 0;
+  color: #555555;
 }
 
 
@@ -244,7 +226,8 @@ p span {
 
 .footNumber {
   vertical-align: super;
-  font-size: 7pt;
+  font-size: 6pt;
+  display: inline;
 }
 
 .blankPage {
@@ -255,6 +238,7 @@ p span {
 
 p a::after {
   content: none;
+  display: none;
 }
 
 
