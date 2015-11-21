@@ -13,6 +13,9 @@
   src: url('../fonts/PantonIcons-ARegular.otf') format('opentype')
 }
 
+@page {
+  marks: crop;
+}
 
 @page :left {
   size: auto;
