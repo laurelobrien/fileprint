@@ -1,5 +1,6 @@
 @media print {
 
+
 /* Fonts
 -----------------------------*/
 @font-face {
@@ -13,6 +14,17 @@
 }
 
 
+@page :left {
+  size: auto;
+  margin: 3cm 3.5cm 4cm 2.5cm;
+}
+
+@page :right {
+  size: auto;
+  margin: 3cm 2.5cm 4cm 3.5cm;
+}
+
+
 
 /* Global Styles
 -----------------------------*/
@@ -22,11 +34,11 @@ html {
 }
 
 body {
-  margin: 0 0 200px; /* bottom = footer height */
+  margin: 0; 
 }
 
 .container {
-  width: 75%;
+  width: 100%;
   margin: auto;
 }
 
@@ -73,9 +85,23 @@ a {
 p {
   font-family: 'FreightText', Garamond, Arial;
   font-size: 12pt;
+  text-align: justify;
+  line-height: 120%;
+  hyphens: auto;
 }
 
-.chapterTitle {
+h2.chapterTitle {
+  text-transform: lowercase;
+  margin: 1cm 0 0 0;
+  padding: 0;
+  font-size: 68pt;
+}
+
+h3.chapterNumber {
+  font-family: 'Apercu Mono', Courier;
+  font-weight: normal;
+  font-size: 12pt;
+  margin: 6cm 0 0 0;
   text-transform: lowercase;
 }
 
@@ -151,7 +177,8 @@ p {
 /* Main Content
 -----------------------------*/
 #seqIcons {
-  margin: 100px auto;
+  width: 50%;
+  margin: 0 25% 2cm 25%;
   text-align: center;
 }
 
