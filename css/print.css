@@ -4,6 +4,11 @@
 /* Fonts
 -----------------------------*/
 @font-face {
+  font-family: 'FreightText';
+  src: url('../fonts/FreightText-book.otf') format('opentype')
+}
+    
+@font-face {
   font-family: 'Panton Icons B';
   src: url('../fonts/PantonIcons-BRegular.otf') format('opentype')
 }
@@ -14,6 +19,7 @@
 }
 
 @page {
+  size: auto;
   marks: crop;
 }
 
