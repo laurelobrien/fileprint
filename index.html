@@ -18,7 +18,12 @@
 
   <div id="titlePage" class="printOnly pageBreak container">
     <h1>file > print</h1>
-    <h3>An overview of how (and why) to make your website print like a book. <span>Or zine. Or pamphlet. Or hand-out. Or origami sculpture.<br>Or __________.</span></h3>
+    <h3>An overview of how (and why) to make a website that prints like a book.<br><br>
+      <span>Or zine.<br>
+        Or pamphlet.<br>
+        Or hand-out.<br>
+        Or origami sculpture.<br>
+        Or __________.</span></h3>
     <h3 id="author">Laurel O'Brien</h3>
   </div>
 
@@ -28,7 +33,7 @@
   <header>
 
     <div id="sidebar">
-      <h1 class="noPrint">file > print</h1>
+      <h1 class="noPrint"><a href="index.html">file > print</a></h1>
       <h1 class="printOnly">table of contents</h1>
       <nav>
         <ul>
@@ -54,13 +59,16 @@
     
     <h3 class="chapterNumber printOnly">01. Introduction</h3>
     <h2 class="chapterTitle">When was the last time you printed a webpage?</h2>
+  </div>
 
     <div class="pageBreak"></div>
     
-    <img id="seqIcons" src="svg/fileprint_headericons.svg">
-
+    <div class="overflow">
+      <img id="seqIcons" src="svg/fileprint_headericons.svg">
+    </div>
+    <div class="container" id="mainContent">
     <p>
-      It was probably to print a recipe or set of instructions. Maybe it was a google doc, complete with URL detritus along the footer. Onet volupta corro to temporem cuptas diam susapitem corem reictur, num vid ut libus ipsunt volendam qui que nimolumquasi blamet <a href="#">dolorei</a> ctatur aut exped et libusci maximet, nos auda voluptate suntem di comniet magniasite que quaerit poreheni quiditam rem same ipsum audit optur sentium versped moloritio ipsus illor reperupturit optaesc illigenime nonsequi temporu ptatur?
+      It was probably to print a recipe or set of instructions. Maybe it was a google doc, complete with <span class="smallCaps">url</span> detritus along the footer. Onet volupta corro to temporem cuptas diam susapitem corem reictur, num vid ut libus ipsunt volendam qui que nimolumquasi blamet <a href="#">dolorei</a> ctatur aut exped et libusci maximet, nos auda voluptate suntem di comniet magniasite que quaerit poreheni quiditam rem same ipsum audit optur sentium versped moloritio ipsus illor reperupturit optaesc illigenime nonsequi temporu ptatur?
     </p>
     <p>Genimus et <a href="#">doloribus</a><span class="printOnly footNumber">1</span>.</p>
     <p>
@@ -82,7 +90,7 @@
   </div>
   </div> <!-- end of #mainWrapper -->
 
-  <div class="blankPage">.</div>
+  <div class="pageBreak"></div>
 
 
   <!-- WEB VS. PRINT -->
@@ -94,19 +102,71 @@
 
       <div class="pageBreak"></div>
 
-      <p>
-        Uptas ut iusciliciasi doluptatum qui undit liquasp edisquam dolesti aut omnim evelesc iatest, sitatem. Et et estis ad utasperum aborpos nonessim excerrunt et aut inciatium experes vendus evenectem sam dolo dit quat deleste ipit quia iusae prerro testo et est aut et pore arum, omniam.
-      </p>
-      <p>
-        Si nost voloratis debitat incium nos aut acessi reptatur?
-      <p>
-        It etum fuga. Itatem sumquas eium nus esti ulparch iliquas net alis dendebit oditatis dolore ressimaio offic temolo il maximus atiorempori re nos mosam reperorest expelib usanti officit asperor uptassi oditectus et voluptatist fuga. Ero blam, temos re, ventinulpa voluptiate dolori re dolut eseque quidit, quati doluptatquae cusae dem aut alia volupta tquiaepudita nonecul landucim inullia volestium facepro vitati consequis eatemporeris assequi tendereicid et et vollant.
-      </p>
-    </p>
+      <h3>Barrier of Entry</h3>
+
+      <p>Publishing on the web is different from print in almost every way except for the presence of a human creator and the written word. Even that isn’t guaranteed with the advent of embedded media and generative programming. Internet publishing has no printing costs, no chain of suppliers or distributors, and everything can be served from a remote web host with your domain slapped on the front. That’s not to say publishing online isn’t serious business, but the barrier for entry starts at about $9 a month these days (or free if you use a platform like Tumblr or Wordpress). Anyone can try their hand at being an independent publisher, and reach an incredibly wide audience without wrestling with international shipping.</p>
+
+      <p>This has created an interesting rift where older players have a print background they must translate to web, whereas their newer colleagues know web as the default and may be lost if they’re composing spreads in a magazine. Print and screen have similarities but their visual language and protocols are necessarily different. Most of us take these nuances for granted—you will only notice poor publication design in either medium, and great design is glossed over comfortably. Have you ever had to magnify your screen or zoom in on a mobile device because the text was so small and hard to read? Or been annoyed by a huge sans-serif font in a magazine? The designer was probably trying to tackle both mediums at once (a request that seems trivial until attempted), or struggled in the translation between the two visual languages.</p>
+
+      <h3>Typography</h3>
+
+      <p>It’s old wisdom that the most important aspect of typography to get right is your body text (<i>text type</i>) because it makes up 90% of the text on the page, even online. Elements like headlines, subtitles, and pull-quotes usually get to be treated with fancier or more interesting fonts (<i>display type</i>) but they’re rarely longer than a line or two, and readability is less stringent.</p>
+
+      <p>Serif typefaces were the first ever created, and there is a rich library to choose from for print text type. Letters with serifs are easier to read because their letter-shapes are very distinct from each other, and so we can recognize the shape of entire word very quickly without confusion between <i>I</i> and <i>l</i> or <i>p</i> and <i>q</i>. Reading long blocks of text is very comfortable and it’s hard to go wrong when choosing between classics like Caslon and Garamond, which have been iterated upon for hundreds of years.</p>
+
+      <p>Sans-serif typefaces are the staple for text type on screens. Most screens have a resolution of 72 <span class="smallCaps">dpi</span> (dots per inch) and the fine details of serif typefaces become fuzzy. Hairlines that turn into serifs or terminals look spotty and jagged, which is not only a disservice to the typeface but irritating to read. Sans-serif is usually mono-weight, or close to it, and renders much more faithfully on screens. There’s a reason your system font on your computer or phone is Helvetica, Tahoma, or San Francisco (maybe even Ubuntu); all sans-serifs designed for screens specifically.</p>
+
+      <p>A common design choice is for your display type to be the opposite of your text type in terms of serifs, and so you’ll often see a flip-flop between print and screen: screen text is sans-serif and print text is serif, and both will have the opposite for their display type. However, using serif typefaces has become more and more acceptable as screen resolutions improve, and web publishers are able to choose their font pairings with more options. The luxe, textural appearance of serif text type is appearing online and the world of web fonts has opened up immensely with serif text and sans-serif display, previously a print-only standard. High resolution displays and ever-improving web fonts is allowing these web publishers to experiment with print design vocabulary and blur the lines between what you might see online and what you might see turning the page in a magazine.</p>
+
+      <p>This book, for example, is using Freight Text for body copy and Apercu Pro for display. Freight Text was designed primarily for screen use, and is one of the (still rare) typefaces to allow the use of intermediate typography like small caps, swashes, and contextual alternates. Apercu Pro, on the other hand, is a beautiful display typeface and a horrible choice for body text. Its design would not be nearly as popular if we were still stuck using only sans-serifs online. Being able to choose a serif text type like Freight Text also means more expressive italics, as most sans-serifs have an italic font that is simply skewed or slanted to the right. It may even be called oblique instead of italic in the actual font files. There are exceptions, but the fact that italics are meant to be another (albeit related) font entirely from their regular/Roman version is usually only apparent in serif typefaces.</p>
+
+      <h3>Technical Differences</h3>
+
+      <p>So, the world of typography has opened up for web publishers. Great! There are still limitations (web fonts often slow down loading times and don’t have as many bells and whistles as their desktop-to-print counterparts) but a huge gap has been bridged between web and print. However, it’s worth examining fundamental differences between the mediums in terms of the content they can serve so we can better understand how they can be translated. This book has attempted to translate formal elements where an equilibrium (such as using serif text type) isn’t possible. Print has been relatively unchanged, technically speaking, but screens are improving in leaps and bounds as the technology behind them does the same.</p>
+
+      <h3>Links</h3>
+      <p>Hyperlinks mean external sources can have their location embedded in the text, and being able to click on one and arrive there is a hallmark of web publication (and the internet in general). Print has several ways of referencing external sources so the purpose of the link has to be considered to choose one, or decide if a new method needs to be created entirely. An easy option is adding the actual URL inline with a CSS pseudo class. If the HTML for a clickable link online looks like this:
+      <span class="code">< a href=“http://google.com”>google< /a></span>
+      adding a pseudo class in the @media print stylesheet which expands the link for non-clickable paper would look like this:
+      <span class="code">a::after {<br>
+      &nbsp;&nbsp;content: " (" attr(href) ")";<br>
+      }</span>
+      The content it grabs is whatever is inside of the href attribute, which you can see above is where the link in question is typed for web display. And now a printed link to google (http://google.com) expands itself.</p>
+
+      <p>The problem with this method is the assumption your reader will put down the book, open a browser on a  nearby device, and type it in. It’s better than no link at all if there’s any ambiguity about what you’re referencing or how to find it, but it’s kind of like saying “here’s the source, I’ve done my journalistic duty, you can go find it if you really want”. It acts like more like a Further Reading suggestion than a connected piece of information. Chicago-style footnotes and annotated citations, more commonly found in scholarly journals than magazines, do a much better job of providing context in the moment. In the print stylesheet, you can add a similar pseudo class as before that appends a footnote instead of an entire link:
+      <span class="code">a::after {<br>
+      &nbsp;&nbsp;content: “1”;<br>
+      &nbsp;&nbsp;font-size: 6pt;<br>
+      &nbsp;&nbsp;vertical-align: super;<br>
+      }</span>
+      which adds a small number (in this case, 1) as superscript after your link. The footer of your page can now host not just the location of that source but a brief summary, or why it’s relevant to your point. Attaching a custom class like “printOnly” and hiding it in the screen stylesheet means it will only reveal itself when the reader accesses the <i>print</i> stylesheet. An <i>unordered list</i> with two <i>list items</i> in the footer serves quite well:
+      <span class="code">< footer><br>
+      &nbsp;&nbsp;< ul><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;< li>1. Dr. Suess’s study concluded that the green-ness of breakfast food had no effect on its taste compared to un-dyed foods when subjects were blindfolded.< /li><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;< li>2. While it makes some ground-breaking discoveries regarding the social structures of Whos, the reader should be cautioned that <i>Horton Hears a Who</i> does use some racist and out-dated language.< /li><br>
+      &nbsp;&nbsp;< /ul><br>
+      < /footer></span>
+
+      which can then by styled in the screen stylesheet as
+      <span class="code">footer {<br>
+        &nbsp;&nbsp;display: none;<br>
+      }</span>
+
+      and in the print stylesheet as per your requirements—probably fixed to the bottom of the page with a rule divider and smaller text, but the world is your oyster.</p>
+
+      <p>The elegance of this solution is thwarted by the fact that any attempt to fix a footer to the bottom of the page does not work when printing without some front-end programming. As far as your browser is concerned, the bottom of the page is the bottom of <i>the entire web page</i>, not where paper ends or page breaks are inserted into the code. Mozilla and Chrome make use of the CSS selector <i>@page</i>, which allows styling page-specific values like margins and size, but its footer and layout functionality is limited.</p>
+
+      <p>The more advanced your solution is, the more likely it is you'll have to employ programming languages like Javascript or Ruby, which allow the use of much more complex logic and parameters to construct the page. At risk of scaring anyone away from learning these very useful languages, adding scripts to your page increases its complexity on more than one level. However, it does mean you can easily insert content into "templates" you've written yourself. Web programming generally lets you be more prescriptive and yet more flexible in how different elements retrieve their content and arrange themselves.</p>
+
+      <h3>Book Anatomy</h3>
+      <p>Traditional print media—specifically books and magazines—has an anatomy of parts that isn’t often mirrored online. Because it exists as a sequential structure, without links to deliver readers directly to certain sections, things like a table of contents and an index become necessary. This is where the creative coding of a website becomes more valuable. With some class selectors and page breaks you can turn a horizontal navigation bar into a vertical table of contents, and swap entire sections with more print-appropriate content. If you bound this book yourself you might have noticed that the chapter </i>Making This Book</i> has been replaced with <i>Making Books</i>, to give readers who have already bound their copy a peak at more advanced binding methods should perfect-binding pique their curiosity. A <i>Further Reading</i> section might link to web articles online and books that can be found in a local library in print. Showing and hiding elements that only work in one medium (video, for example) can become an embedded game of hide and seek.</p>
+
+      <p>The most disappointing pitfall of using <span class="inlineCode">@media print</span> is the lack of flexibility in styling elements as ink on a page. Regular print can take advantage of sprawling spreads and predictable text layout, but using a print stylesheet hooked up to <span class="smallcaps">HTML</span> means everything is rendered one page at a time, with no reference to things on pages that came before or after. Developing a print stylesheet made it apparent that the existence of things like <span class="inlineCode">@page</span> and recto-verso margins are luxuries in the first place. However, this does put some creative constraints on developers and authors that may forge something more interesting than if they had free reign in inDesign.</p>
+
     </div>
   </div>
 
-  <!-- blank page -->
+  <!-- new page -->
   <div class="pageBreak"></div>
 
   <!-- MAKING THIS BOOK -->
@@ -151,7 +211,7 @@
         <img class="dropShadow" src="images/making/print_dialogue.png" alt="">
         <p>The system dialogue is your computer's method of printing documents, instead of the browser's, which usually means more custom options. A lot of control has been relinquished by your browser now, and we're limited to what the printer and your OS know how to do.</p>
         <p>
-        On Mac OSX, changing this setting is possible in the "Layout" sub-menu.</p>
+        On <span class="smallCaps">OSX</span>, changing this setting is possible in the "Layout" sub-menu.</p>
 
         <h3 class="instruction">Make sure <i>Two-Sided</i> is ticked and in the same Layout sub-menu, select <i>Short-Edge binding</i>.</h3>
         <img class="dropShadow" src="images/making/binding_menu.png" alt="">
@@ -173,7 +233,7 @@
     </div> <!-- end of #makingContent -->
   </div> <!-- end of #making-this-book -->
 
-  <div class="pageBreak">.</div>
+  <div class="pageBreak"></div>
 
   <!-- FURTHER READING: WEB -->
   <div id="furtherReading" class="sectionWrapper noPrint">
@@ -265,8 +325,6 @@
   </div> <!-- end of #indexContent -->
   </div>
 
-  <div class="pageBreak">.</div>
-
   <!-- FURTHER READING: PRINT -->
   <div class="sectionWrapper" id="further-reading-print">
     <div class="container" id="frp-content">
@@ -280,28 +338,32 @@
       <div class="book-entry">
         <h3>Protocol: How Control Exists After Decentralization</h3>
         <h4>Alexander R. Galloway, 2004</h4>
-        <p><i>Protocol</i> explores and explains how strict structures and systems must exist for networks to function, and that the internet is built on <i>control</i>, not freedom. Computers are literal and indiscreet, which means those of us who interface with them must obey protocols (such as how a browser renders code or what software is installed on a user's computer) if we hope to communicate effectively. This very book follows strict CSS protocols so that something unusual and creative—printing it—is possible.</p>
+        <p><i>Protocol</i> explains how strict structures and systems must exist for networks to function, and that the internet is built on <i>control</i>, not freedom. Computers are literal and indiscrete, which means those of us who interface with them must obey protocols, such as how a browser renders code or what software is installed on a user's computer, if we hope to communicate effectively. This very book follows strict CSS protocols so that something unusual and creative—printing it—is possible (although not without its own frustrations).</p>
       </div>
 
       <div class="book-entry">
         <h3>Print is Dead. Long Live Print: The World's Best Independent Magazines</h3>
         <h4>Ruth Jamieson, 2015</h4>
-        <p><i></i>Ruth Jamieson collected examples of independent magazines succeeding where Big Print fails in a series of case studies titled <i>Print is Dead. Long Live Print</i>. Jamieson believes that print as we knew it for hundreds of years has been slain by web publishing, but its death clears the way for new print publications to be unconcerned with immediacy, universal appeal, or competing with the internet's torrent of information. Niche, material, and innovation are king.</p>
+        <p><i></i>Ruth Jamieson has collected examples of independent magazines succeeding where Big Print fails in a series of case studies titled <i>Print is Dead. Long Live Print</i>. Jamieson believes that print as we knew it for hundreds of years has been slain by web publishing, but like a forest fire its death clears the way for new growth. Today's magazines can afford to be unconcerned with immediacy, universal appeal, or competing with the internet's torrent of information. Niche, material, and innovation are king.</p>
       </div>
 
     </div>
   </div> <!-- end of #further-reading-print-->
 
-  <div class="pageBreak"></div>
+  <div class="blankPage"></div>
 
   <!-- GLOSSARY -->
   <div id="glossary" class="sectionWrapper">
     <div class="container" id="glossContent">
 
-    <h2 class="chapterTitle">
-      Glossary of Terms
+    <h3 class="chapterNumber printOnly">08. glossary</h3>
+    <h2 class="chapterTitle printOnly">
+      web & print designers use a lot of jargon.
     </h2>
+    <h2 class="chapterTitle noPrint">glossary of terms</h2>
     
+    <div class="pageBreak"></div>
+
     <ul>
       <li>
         <h3>HTML</h3>
@@ -309,7 +371,7 @@
       </li>
       <li>
         <h3>CSS</h3> <p>stands for <i>Cascading Style Sheet</i>. CSS is a coding language that selects elements in a website's HTML and dictates what that element should look like and how it affects other elements. Giving the header a white background with text inside it aligned to the right would look like:
-        <span>header {<br>
+        <span class="code">header {<br>
           &nbsp;&nbsp;background-color: #ffffff;<br>
           &nbsp;&nbsp;text-align: right;<br>
         }</span>
@@ -331,7 +393,7 @@
         <h3>Tail</h3> <p>the bottom edge of a page.</p>
       </li>
       <li>
-        <h3>Media Query</h3> <p>a CSS statement that asks a browser what device or media the browser is serving your content to, such as screen or print. All the styles wrapped inside the query will apply if the media matches its rules; a media query of <span>@media screen and max-width < 480px</span> will have its styles applied to the page if the device is a screen and less than 480 pixels wide, such as an iPhone 5 or most Android devices.</p>
+        <h3>Media Query</h3> <p>a CSS statement that asks a browser what device or media the browser is serving your content to, such as screen or print. All the styles wrapped inside the query will apply if the media matches its rules; a media query of <span class="code">@media screen and max-width < 480px</span> will have its styles applied to the page if the device is a screen and less than 480 pixels wide, such as an iPhone 5 or most Android devices.</p>
       </li>
     </ul>
 

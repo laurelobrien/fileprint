@@ -72,8 +72,8 @@ ul {
 
 /* Typography
 -----------------------------*/
-h1, h2, h3 ul, h4 {
-  font-family: 'Apercu Pro', Garamond, Georgia;
+h1, h2, h3 ul, h3, h4 {
+  font-family: 'Apercu Pro', Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
@@ -114,6 +114,29 @@ h3.chapterNumber {
   text-transform: lowercase;
 }
 
+p span.inlineCode {
+  font-family: 'Apercu Mono', Courier;
+  font-size: 10pt;
+}
+
+p span.code, li p span.code {
+  font-family: 'Apercu Mono', Courier;
+  font-size: 10pt;
+  display: block;
+  margin: 15px 0;
+  padding: 5px 15px 5px 20px;
+  background-color: #eeeeee;
+  page-break-inside: avoid;
+}
+
+.smallCaps {
+    -ms-font-feature-settings: "smcp";
+    -moz-font-feature-settings: "smcp";
+    -webkit-font-feature-settings: "smcp";
+    font-feature-settings: "smcp";
+    font-variant-caps: all-small-caps;
+}
+
 .iconB {
   font-family: 'Panton Icons B';
   font-size: inherit;
@@ -141,18 +164,11 @@ h3.chapterNumber {
   padding: 0;
 }
 
-#mainBody li span {
-  font-family: 'Apercu Mono', Courier, Helvetica, Arial;
-  font-size: inherit;
-  display: inline;
-  margin-right: 30px;
-}
-
 
 /* Title Page
 -----------------------------*/
 #titlePage.container {
-  width: 40%;
+  width: 50%;
 }
 
 #titlePage {
@@ -166,8 +182,11 @@ h3.chapterNumber {
 
 #titlePage h3 {
   font-size: 10pt;
-  font-family: 'FreightText', Garamond, Arial;
-  font-style: italic;
+  font-family: 'freight-display-pro', 'FreightText', Garamond, Arial;
+  text-align: left;
+  -moz-font-feature-settings: "salt";
+  -webkit-font-feature-settings: "salt";
+  font-feature-settings: "salt";
 }
 
 #titlePage h3#author {
@@ -203,6 +222,10 @@ h3.chapterNumber {
   color: #555555;
 }
 
+.book-entry {
+  margin: 0 0 2cm 0;
+}
+
 
 /* Glossary
 -----------------------------*/
@@ -228,15 +251,6 @@ h3.chapterNumber {
   float: left;
   text-align: left;
   width: 27%;
-}
-
-p span {
-  font-family: 'Apercu Mono', Courier;
-  font-size: 12pt;
-  display: block;
-  margin: 15px 0;
-  padding: 5px 0 5px 20px;
-  background-color: #ffffff;
 }
 
 
