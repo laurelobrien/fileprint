@@ -35,7 +35,7 @@ body {
 
 .overflow {
   width: 65%;
-  margin: 100px 25% 100px auto;
+  margin: 75px 25% 75px auto;
 }
 
 .justify {
@@ -67,6 +67,12 @@ ul {
   margin: 0;
 }
 
+.floatImg {
+  float: left;
+  width: 65%;
+  margin: 0 4% 2% -15%;
+}
+
 
 
 /* Typography
@@ -95,6 +101,10 @@ p a:hover {
   border: none;
   color: inherit;
   background-color: #FFEE00;
+}
+
+p a.noDot::after {
+  content: none;
 }
 
 h1 {
@@ -141,6 +151,17 @@ p span.inlineCode {
   font-family: 'Apercu Mono', Courier;
   font-size: 0.85em;
   margin: 0 3px;
+}
+
+h5 {
+  font-family: 'freight-text-pro', Garamond, Georgia, serif;
+  font-size: 0.9em;
+  font-style: italic;
+  font-weight: normal;
+  width: 70%;
+  margin: auto;
+  margin: 40px auto 0 auto;
+  text-align: center;
 }
 
 .chapterTitle {
@@ -249,12 +270,6 @@ img {
 }
 
 
-/* Making Your Own Book
------------------------------*/
-#make-your-own-book {
-  background-color: #edabaa;
-}
-
 
 /* Further Reading
 ----------------------------*/
@@ -319,60 +334,6 @@ img {
 }
 
 
-/* Further Reading: Print (delete on completion)
-----------------------------*/
-#further-reading-print h3 {
-  font-family: 'Apercu Pro', Helvetica, Arial;
-  font-weight: bold;
-  margin: 0 0 10px 0;
-}
-
-#further-reading-print h4 {
-  font-family: 'Apercu Pro', Helvetica, Arial;
-  font-weight: normal;
-  margin: 0 0 23px 0;
-  padding: 0;
-}
-
-.book-entry {
-  margin: 0 0 60px 0;
-}
-
-
-/* Glossary
------------------------------*/
-#glossary {
-  background-color: #FAE3DC;
-}
-
-#glossContent {
-  overflow: auto;
-}
-
-#glossContent li {
-  font-family: 'freight-text-pro', 'FreightText', Helvetica, Arial;
-  margin: 30px 0;
-  font-size: 1em;
-  clear: both;
-}
-
-#glossContent li p {
-  width: 70%;
-  float: right;
-  border-left: 1px #000000 solid;
-  padding-top: 1px;
-  padding-left: 15px;
-}
-
-#glossContent li h3 {
-  font-family: 'Apercu Pro', Garamond, Georgia;
-  font-size: inherit;
-  font-weight: normal;
-  float: left;
-  text-align: left;
-  width: 27%;
-}
-
 
 /* Web vs. Print
 ----------------------------*/
@@ -383,6 +344,7 @@ img {
 #versus h3 {
   margin-top: 75px;
 }
+
 
 
 /* Making This Book
@@ -448,6 +410,80 @@ img {
 .fiftyblock img {
   float: left;
   width: 40%;
+}
+
+
+
+/* Making Your Own Book
+-----------------------------*/
+#make-your-own-book {
+  background-color: #f8eab7;
+}
+
+img.inlineImg {
+  display: inline;
+  width: 48%;
+}
+
+#leftImg {
+  margin: 0 3.5% 0 0;
+}
+
+
+
+/* Further Reading: Print (delete on completion)
+----------------------------*/
+#further-reading-print h3 {
+  font-family: 'Apercu Pro', Helvetica, Arial;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+#further-reading-print h4 {
+  font-family: 'Apercu Pro', Helvetica, Arial;
+  font-weight: normal;
+  margin: 0 0 23px 0;
+  padding: 0;
+}
+
+.book-entry {
+  margin: 0 0 60px 0;
+}
+
+
+
+/* Glossary
+-----------------------------*/
+#glossary {
+  background-color: #FAE3DC;
+}
+
+#glossContent {
+  overflow: auto;
+}
+
+#glossContent li {
+  font-family: 'freight-text-pro', 'FreightText', Helvetica, Arial;
+  margin: 30px 0;
+  font-size: 1em;
+  clear: both;
+}
+
+#glossContent li p {
+  width: 70%;
+  float: right;
+  border-left: 1px #000000 solid;
+  padding-top: 1px;
+  padding-left: 15px;
+}
+
+#glossContent li h3 {
+  font-family: 'Apercu Pro', Garamond, Georgia;
+  font-size: inherit;
+  font-weight: normal;
+  float: left;
+  text-align: left;
+  width: 27%;
 }
 
 

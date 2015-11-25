@@ -126,7 +126,7 @@
 
       <h3>Links</h3>
       <p>Hyperlinks mean external sources can have their location embedded in the text, and being able to click on one and arrive there is a hallmark of web publication (and the internet in general). Print has several ways of referencing external sources so the purpose of the link has to be considered to choose one, or decide if a new method needs to be created entirely. An easy option is adding the actual URL inline with a CSS pseudo class. If the HTML for a clickable link online looks like this:
-      <span class="code">< a href=“http://google.com”>google< /a></span>
+      <span class="code"><&zwj;a href=“http://google.com”>google<&zwj;/a></span>
       adding a pseudo class in the @media print stylesheet which expands the link for non-clickable paper would look like this:
       <span class="code">a::after {<br>
       &nbsp;&nbsp;content: " (" attr(href) ")";<br>
@@ -140,12 +140,12 @@
       &nbsp;&nbsp;vertical-align: super;<br>
       }</span>
       which adds a small number (in this case, 1) as superscript after your link. The footer of your page can now host not just the location of that source but a brief summary, or why it’s relevant to your point. Attaching a custom class like “printOnly” and hiding it in the screen stylesheet means it will only reveal itself when the reader accesses the <i>print</i> stylesheet. An <i>unordered list</i> with two <i>list items</i> in the footer serves quite well:
-      <span class="code">< footer><br>
-      &nbsp;&nbsp;< ul><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;< li>1. Dr. Suess’s study concluded that the green-ness of breakfast food had no effect on its taste compared to un-dyed foods when subjects were blindfolded.< /li><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;< li>2. While it makes some ground-breaking discoveries regarding the social structures of Whos, the reader should be cautioned that <i>Horton Hears a Who</i> does use some racist and out-dated language.< /li><br>
-      &nbsp;&nbsp;< /ul><br>
-      < /footer></span>
+      <span class="code"><&zwj;footer><br>
+      &nbsp;&nbsp;<&zwj;ul><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<&zwj;li>1. Dr. Suess’s study concluded that the green-ness of breakfast food had no effect on its taste compared to un-dyed foods when subjects were blindfolded.<&zwj;/li><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<&zwj;li>2. While it makes some ground-breaking discoveries regarding the social structures of Whos, the reader should be cautioned that <i>Horton Hears a Who</i> does use some racist and out-dated language.<&zwj;/li><br>
+      &nbsp;&nbsp;<&zwj;/ul><br>
+      <&zwj;/footer></span>
 
       which can then by styled in the screen stylesheet as
       <span class="code">footer {<br>
@@ -242,11 +242,16 @@
       <h2 class="chapterTitle printOnly">code online & print offline.</h2>
       <h2 class="chapterTitle noPrint">Making Your Own Book</h2>
 
-      <p>The purpose of this publication, besides providing some insight about web development possibilities, is to be a first draft for a framework that anyone can use to publish a printable website. Several online publications have created print stylesheets but they’re private-use only and more or less just strip the web version of anything that won’t print well, like links and navigation bars. CSS-Tricks, a site filled with tutorials and tips for working with <span class="smallCaps">css</span>, has one that aims to strip away print-unfriendly content and make the text as readable as possible. They know their pages will be printed as offline reference material, and creating a beautiful print layout would require more wrangling than their readers really need. Many other web publications do put a lot of sweat and tears into providing both formats in their optimized glory, but they are developed separately and the print version is a product for purchase put together by print designers.</p>
+      <p>The purpose of this publication, besides providing some insight about web development possibilities, is to be a first draft for a framework that anyone can use to publish a printable website. Several online publications have created print stylesheets but they’re private-use only and more or less just strip the web version of anything that won’t print well, like links and navigation bars. CSS-Tricks, a site filled with tutorials and tips for working with <span class="smallCaps">css</span>, has one that aims to strip away print-unfriendly content and make the text as readable as possible. They know their pages will be printed as offline reference material, and creating a beautiful print layout would require more wrangling than their readers really need.</p>
+
+      <p>
+        <a class ="noDot" href="http://supercommunity.e-flux.com/topics/supercommunity/"><img src="images/eflux_pdf.png" class="floatImg"></a>
+        <a href="#furtherReading">Many other web publications</a> do put a lot of sweat and tears into providing both formats in their optimized glory, but they are developed separately. The print version is a product for purchase put together by print designers. e-flux journal has a (rather genius) <a href="http://supercommunity.e-flux.com/issue/">PDF generator</a> with a variety of templates but it's proprietary software.
+      </p>
 
       <p>A web framework can have many forms but the simplest is a pre-made stylesheet. Bootstrap and Foundation both have dense stylesheets and scripts you can reference in your <span class="smallCaps">html</span> code, and styling your page is as simple as slotting classes into tags that match your purpose, such as “navbar” or “button”. And, of course, it’s always possible to add your own <span class="smallCaps">css</span> on top as a separate stylesheet should you want to customize it further.</p>
 
-      <p>As it stands, <i>File > Print</i>’s stylesheets are far too customized for public use (though feel free to peak at it via <span class="inlineCode">right click > View Page Source</span>, they’re linked inside the <span class="inlineCode"><&zwj;head></span> tag). Experimenting with all the abilities and limitations of <span class="inlineCode">@page</span> and <span class="inlineCode">@media print</span> meant some jerry-rigging and the use of magic numbers. A final public version will be released by the end of 2015 and will be available on GitHub. However, if you’re already even somewhat-skilled in <span class="smallCaps">html</span> and <span class="smallCaps">css</span>, making your own print stylesheet is an exciting task and will challenge you to consider what is different about the printed page.</p>
+      <p>As it stands, <i>File > Print</i>’s stylesheets are far too customized for public use (though feel free to peak at it via <span class="inlineCode">right click > View Page Source</span>, they’re linked inside the <span class="inlineCode"><&zwj;head></span> tag). Experimenting with all the abilities and limitations of <span class="inlineCode">@page</span> and <span class="inlineCode">@media print</span> meant some jerry-rigging and the use of magic numbers. A final public version will be released by the end of 2015 and will be available on <a href="https://github.com/laurelobrien">GitHub</a>. However, if you’re already even somewhat-skilled in <span class="smallCaps">html</span> and <span class="smallCaps">css</span>, making your own print stylesheet is the same syntax as for web, with layouts and translations that have yet to be explored.</p>
 
     </div>
   </div>
