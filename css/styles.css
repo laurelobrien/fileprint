@@ -1,6 +1,28 @@
 @font-face {
-  font-family: 'FreightText';
-  src: url('../fonts/FreightText-book.otf') format('opentype')
+  font-family: 'Apercu Pro';
+  src: url('../fonts/Apercu/eot/ApercuPro.eot');
+  src: url('../fonts/Apercu/eot/ApercuPro.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Apercu/woff/ApercuPro.woff') format('woff'),
+       url('../fonts/Apercu/otf/apercu_regular_pro.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Apercu Pro';
+  src: url('../fonts/Apercu/eot/ApercuProBold.eot');
+  src: url('../fonts/Apercu/eot/ApercuProBold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Apercu/woff/ApercuProBold.woff') format('woff'),
+       url('../fonts/Apercu/otf/apercu_bold_pro.otf') format('opentype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Apercu Mono';
+  src: url('../fonts/Apercu/eot/ApercuProMono.eot');
+  src: url('../fonts/Apercu/eot/ApercuProMono.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Apercu/woff/ApercuProMono.woff') format('woff'),
+       url('../fonts/Apercu/otf/apercu_mono_pro.otf') format('opentype');
+  font-weight: bold;
 }
 
 @font-face {
