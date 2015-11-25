@@ -42,7 +42,7 @@
           <li><a href="#versus"><span class="printOnly">03.</span>web vs. print</a></li>
           <li><a href=""><span class="printOnly">04.</span>@media</a></li>
           <li><a href="#making-this-book"><span class="printOnly">05.</span>making this book</a></li>
-          <li><a href=""><span class="printOnly">06.</span>making your own book</a></li>
+          <li><a href="#making-your-own-book"><span class="printOnly">06.</span>making your own book</a></li>
           <li><a href="#furtherReading"><span class="printOnly">07.</span>further reading</a></li>
           <li><a href="#glossary"><span class="printOnly">08.</span>glossary</a></li>
         </ul>
@@ -235,6 +235,22 @@
 
   <div class="pageBreak"></div>
 
+  <div id="make-your-own-book" class="sectionWrapper">
+    <div class="container" id="makeOwnContent">
+
+      <h3 class="chapterNumber printOnly">06. making your own book</h3>
+      <h2 class="chapterTitle printOnly">code online & print offline.</h2>
+      <h2 class="chapterTitle noPrint">Making Your Own Book</h2>
+
+      <p>The purpose of this publication, besides providing some insight about web development possibilities, is to be a first draft for a framework that anyone can use to publish a printable website. Several online publications have created print stylesheets but they’re private-use only and more or less just strip the web version of anything that won’t print well, like links and navigation bars. CSS-Tricks, a site filled with tutorials and tips for working with <span class="smallCaps">css</span>, has one that aims to strip away print-unfriendly content and make the text as readable as possible. They know their pages will be printed as offline reference material, and creating a beautiful print layout would require more wrangling than their readers really need. Many other web publications do put a lot of sweat and tears into providing both formats in their optimized glory, but they are developed separately and the print version is a product for purchase put together by print designers.</p>
+
+      <p>A web framework can have many forms but the simplest is a pre-made stylesheet. Bootstrap and Foundation both have dense stylesheets and scripts you can reference in your <span class="smallCaps">html</span> code, and styling your page is as simple as slotting classes into tags that match your purpose, such as “navbar” or “button”. And, of course, it’s always possible to add your own <span class="smallCaps">css</span> on top as a separate stylesheet should you want to customize it further.</p>
+
+      <p>As it stands, <i>File > Print</i>’s stylesheets are far too customized for public use (though feel free to peak at it via <span class="inlineCode">right click > View Page Source</span>, they’re linked inside the <span class="inlineCode"><&zwj;head></span> tag). Experimenting with all the abilities and limitations of <span class="inlineCode">@page</span> and <span class="inlineCode">@media print</span> meant some jerry-rigging and the use of magic numbers. A final public version will be released by the end of 2015 and will be available on GitHub. However, if you’re already even somewhat-skilled in <span class="smallCaps">html</span> and <span class="smallCaps">css</span>, making your own print stylesheet is an exciting task and will challenge you to consider what is different about the printed page.</p>
+
+    </div>
+  </div>
+
   <!-- FURTHER READING: WEB -->
   <div id="furtherReading" class="sectionWrapper noPrint">
   <div class="container" id="furtherContent">
@@ -326,7 +342,7 @@
   </div>
 
   <!-- FURTHER READING: PRINT -->
-  <div class="sectionWrapper" id="further-reading-print">
+  <div class="sectionWrapper printOnly" id="further-reading-print">
     <div class="container" id="frp-content">
 
       <h3 class="chapterNumber printOnly" style="margin-top: 8.5cm">07. Further Reading</h3>

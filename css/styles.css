@@ -82,7 +82,7 @@ a {
 p {
   font-family: 'freight-text-pro', 'FreightText', Helvetica, Arial;
   font-size: 1.2em;
-  line-height: 140%;
+  line-height: 150%;
   text-align: justify;
   hyphens: auto;
 }
@@ -139,7 +139,7 @@ p span.code {
 
 p span.inlineCode {
   font-family: 'Apercu Mono', Courier;
-  font-size: 0.9em;
+  font-size: 0.85em;
   margin: 0 3px;
 }
 
@@ -246,6 +246,13 @@ img {
   margin: 0;
   text-align: center;
   width: 100%;
+}
+
+
+/* Making Your Own Book
+-----------------------------*/
+#make-your-own-book {
+  background-color: #edabaa;
 }
 
 
