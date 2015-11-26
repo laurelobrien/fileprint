@@ -48,12 +48,12 @@
 
 @page :left {
   size: auto;
-  margin: 1.5cm 2.5cm 2cm 1.5cm;
+  margin: 2cm 2.5cm 2cm 2cm;
 }
 
 @page :right {
   size: auto;
-  margin: 1.5cm 1.5cm 2cm 2.5cm;
+  margin: 2cm 2cm 2cm 2.5cm;
 }
 
 
@@ -170,7 +170,7 @@ p span.code, li p span.code {
 /* Table of Contents
 -----------------------------*/
 #mainBody header {
-  width: 80%;
+  width: 100%;
   margin: 2.5cm 0 0 15%;
   text-align: left;
 }
@@ -182,14 +182,15 @@ p span.code, li p span.code {
 }
 
 #mainBody nav li {
-  font-family: 'freight-display-pro', Garamond, Arial, serif;
+  font-family: 'freight-display-pro', Garamond, Georgia, serif;
   font-size: 10pt;
   margin: 10px 0;
   padding: 0;
 }
 
 #mainBody nav li span {
-  font-family: 'Apercu Mono', Courier;
+  font-family: 'Apercu Pro', Helvetica, Arial, serif;
+  margin: 0 0.5cm 0 0;
   font-size: inherit;
 }
 
@@ -240,6 +241,24 @@ p span.code, li p span.code {
 }
 
 
+/* Web vs Print
+-----------------------------*/
+#versus h3 {
+  margin: 1cm 0 0 0;
+}
+
+
+/* Making Your Own Book
+-----------------------------*/
+#make-your-own-book .chapterNumber {
+  margin: 7.5cm 0 0 0;
+}
+
+#make-your-own-book .chapterTitle {
+  letter-spacing: -0.05em;
+}
+
+
 /* Further Reading
 -----------------------------*/
 #further-reading-print h3 {
@@ -252,7 +271,7 @@ p span.code, li p span.code {
 }
 
 .book-entry {
-  margin: 0 0 1cm 0;
+  margin: 0 0 2cm 0;
 }
 
 
