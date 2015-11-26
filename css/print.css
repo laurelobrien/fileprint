@@ -140,7 +140,7 @@ h3.chapterNumber {
 
 p span.inlineCode {
   font-family: 'Apercu Mono', Courier;
-  font-size: 10pt;
+  font-size: 9pt;
 }
 
 p span.code, li p span.code {
@@ -244,14 +244,14 @@ p span.code, li p span.code {
 /* Web vs Print
 -----------------------------*/
 #versus h3 {
-  margin: 1cm 0 0 0;
+  margin: 2cm 0 0 0;
 }
 
 
 /* Making Your Own Book
 -----------------------------*/
 #make-your-own-book .chapterNumber {
-  margin: 7.5cm 0 0 0;
+  margin: 9cm 0 0 0;
 }
 
 #make-your-own-book .chapterTitle {
@@ -263,11 +263,16 @@ p span.code, li p span.code {
 -----------------------------*/
 #further-reading-print h3 {
   font-weight: bold;
+  margin: 0 0 1cm 0;
 }
 #further-reading-print h4 {
   margin: 0;
   padding: 0;
   color: #555555;
+}
+
+#further-reading-print #chapterNumber {
+  margin: 9cm 0 0 0;
 }
 
 .book-entry {

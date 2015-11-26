@@ -118,7 +118,7 @@
 
       <p>A common design choice is for display type to be the opposite of text type in terms of serifs, and so you’ll often see a flip-flop between print and screen: screen text is sans-serif and print text is serif, and both will have the opposite for their display type. However, using serif typefaces has become more and more acceptable as screen resolutions improve, and web publishers are able to choose their font pairings with more options. The luxe, textural appearance of serif text type is finally an option for web publishing, and so the print-classic pairing of a display sans and text serif has made its way onto our screens. High resolution displays and ever-improving web fonts are allowing web publishers to experiment with print design vocabulary and blur the lines between what you might see scrolling online and what you might see turning the page in a magazine.</p>
 
-      To make an example, this book is using Freight Text for text type and Apercu Pro for display. Freight Text was designed primarily for screen use, and comes packaged with the still-rare ability to render intermediate typography like small caps, swashes, and contextual alternates through <span class="smallCaps">css</span>. Apercu Pro, on the other hand, is a beautiful display typeface and a horrible choice for body text. Its design would not be nearly as popular if we were still stuck using only sans-serifs just like it online. Being able to choose a serif text type like Freight Text also means accessing more expressive italics, as most sans-serifs have a bland italic font that is simply skewed to the right. It may even be called "oblique" instead of italic in the font files. There are exceptions, but the fact that italics are meant to be a different (albeit related) font entirely from their regular/Roman version is most apparent in serif typefaces.</p>
+      <p>To make an example, this book is using Freight Text for text type and Apercu Pro for display. Freight Text was designed primarily for screen use, and comes packaged with the still-rare ability to render intermediate typography like small caps, swashes, and contextual alternates through <span class="smallCaps">css</span>. Apercu Pro, on the other hand, is a beautiful display typeface and a horrible choice for body text. Its design would not be nearly as popular if we were still stuck using only sans-serifs just like it online. Being able to choose a serif text type like Freight Text also means accessing more expressive italics, as most sans-serifs have a bland italic font that is simply skewed to the right. It may even be called "oblique" instead of italic in the font files. There are exceptions, but the fact that italics are meant to be a different (albeit related) font entirely from their regular/Roman version is most apparent in serif typefaces.</p>
 
       <h3>Technical Differences</h3>
 
@@ -251,9 +251,9 @@
         <a href="#furtherReading">Many web publications</a> do put a lot of sweat and tears into providing both formats in their optimized glory, but they are developed separately—the print version is a product for purchase put together by print designers. <i>e-flux journal</i> has a (rather genius) <a href="http://supercommunity.e-flux.com/issue/"><span class="smallCaps">pdf</span> generator</a> with a variety of templates but it's proprietary software.
       </p>
 
-      <p>A web framework can have many forms but the simplest is a pre-made <span class="smallCaps">stylesheet</span>. <a href="http://getbootstrap.com/">Bootstrap</a> and <a href="http://foundation.zurb.com/">Foundation</a> both have dense stylesheets and scripts you can reference in your <span class="smallCaps">html</span> code, and styling a page is as simple as slotting classes into tags that match your purpose, such as “navbar” or “button”. And, of course, it’s always possible to add your own <span class="smallCaps">css</span> on top as a separate stylesheet should you want to customize it further.</p>
+      <p>A web framework can have many forms but the simplest is a pre-made <span class="smallCaps">css</span> stylesheet. <a href="http://getbootstrap.com/">Bootstrap</a> and <a href="http://foundation.zurb.com/">Foundation</a> both have dense stylesheets you can reference in your <span class="smallCaps">html</span> code, and styling a page is as simple as slotting classes into tags that match your purpose, such as “navbar” or “button”. And, of course, it’s always possible to add your own <span class="smallCaps">css</span> on top as a separate stylesheet should you want to customize it further.</p>
 
-      <p>As it stands, this books’s stylesheets are far too customized for public use (though feel free to peak at it via <span class="inlineCode">right click > View Page Source</span>, they’re linked inside the <span class="inlineCode"><&zwj;head></span> tag). Experimenting with all the abilities and limitations of <span class="inlineCode">@page</span> and <span class="inlineCode">@media print</span> meant some jerry-rigging and the use of magic numbers<span class="footNumber">9</span>. A final public version will be released by the end of 2015, available on <a href="https://github.com/laurelobrien">GitHub<span class="footNumber">9</span></a>. However, <span class="smallCaps">html</span> and <span class="smallCaps">css</span> are quick to get started with if you're not yet familiar with them, and the ability to create and modify your own content online is incredibly liberating.</p>
+      <p>As it stands, this books’s stylesheets are far too customized for public use (though feel free to peak at it via <span class="inlineCode">right click > View Page Source</span>; they’re linked inside the <span class="inlineCode"><&zwj;head></span> tag). Experimenting with all the abilities and limitations of <span class="inlineCode">@page</span> and <span class="inlineCode">@media print</span> meant some jerry-rigging and the use of magic numbers<span class="footNumber">9</span>. A final public version will be released by the end of 2015, available on <a href="https://github.com/laurelobrien">GitHub<span class="footNumber">9</span></a>. However, <span class="smallCaps">html</span> and <span class="smallCaps">css</span> are quick to get started with if you're not yet familiar with them, and the ability to create and modify your own content online is incredibly liberating.</p>
 
     </div>
   </div>
@@ -392,15 +392,15 @@
     <ul>
       <li>
         <h3>HTML</h3>
-        <p>stands for <i>Hyper Text Markup Language</i>. HTML is the base language websites are written in. Content is wrapped in “tags” that indicate to the browser what sort of element it is, such as a header, footer, link, etc.</p>
+        <p>stands for <i>Hyper Text Markup Language</i>. <span class="smallCaps">HTML</span> is the base language websites are written in. Content is wrapped in “tags” which indicate to the browser what sort of element it is, such as a header, footer, link, etc.</p>
       </li>
       <li>
-        <h3>CSS</h3> <p>stands for <i>Cascading Style Sheet</i>. CSS is a coding language that selects elements in a website's HTML and dictates what that element should look like and how it affects other elements. Giving the header a white background with text inside it aligned to the right would look like:
+        <h3>CSS</h3> <p>stands for <i>Cascading Style Sheet</i>. <span class="smallCaps">css</span> is a coding language that selects elements in a website's <span class="smallCaps">html</span> and dictates what that element should look like and how it affects other elements. Giving the header a white background with text inside it aligned to the right would look like:
         <span class="code">header {<br>
           &nbsp;&nbsp;background-color: #ffffff;<br>
           &nbsp;&nbsp;text-align: right;<br>
         }</span>
-        HTML is the content, and CSS is how it looks.</p>
+        <span class="smallCaps">HTML</span> is the content, and CSS is how it looks.</p>
       </li>
       <li>
         <h3>Perfect Binding</h3> <p>method of binding a book by aligning loose sheets of paper along their intended spine and applying glue, usually with a brush or palette knife. Thick magazines and soft-cover books are usually bound this way. A cover and even a dust-jacket can be added.</p>
@@ -418,7 +418,7 @@
         <h3>Tail</h3> <p>the bottom edge of a page.</p>
       </li>
       <li>
-        <h3>Media Query</h3> <p>a CSS statement that asks a browser what device or media the browser is serving your content to, such as screen or print. All the styles wrapped inside the query will apply if the media matches its rules; a media query of <span class="code">@media screen and max-width < 480px</span> will have its styles applied to the page if the device is a screen and less than 480 pixels wide, such as an iPhone 5 or most Android devices.</p>
+        <h3>Media Query</h3> <p>a <span class="smallCaps">CSS</span> statement that asks a browser what device or media the browser is serving your content to, such as screen or print. All the styles wrapped inside the query will apply if the media matches its rules; a media query of <span class="code">@media screen and max-width < 480px</span> will have its styles applied to the page if the device is a screen and less than 480 pixels wide, such as an iPhone 5 or most Android devices.</p>
       </li>
     </ul>
 
