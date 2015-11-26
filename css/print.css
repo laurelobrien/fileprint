@@ -14,6 +14,33 @@
   src: url('../fonts/PantonIcons-ARegular.otf') format('opentype')
 }
 
+@font-face {
+  font-family: 'Apercu Pro';
+  src: url('../fonts/Apercu/eot/ApercuPro.eot');
+  src: url('../fonts/Apercu/eot/ApercuPro.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Apercu/woff/ApercuPro.woff') format('woff'),
+       url('../fonts/Apercu/otf/apercu_regular_pro.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Apercu Pro';
+  src: url('../fonts/Apercu/eot/ApercuProBold.eot');
+  src: url('../fonts/Apercu/eot/ApercuProBold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Apercu/woff/ApercuProBold.woff') format('woff'),
+       url('../fonts/Apercu/otf/apercu_bold_pro.otf') format('opentype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Apercu Mono';
+  src: url('../fonts/Apercu/eot/ApercuProMono.eot');
+  src: url('../fonts/Apercu/eot/ApercuProMono.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Apercu/woff/ApercuProMono.woff') format('woff'),
+       url('../fonts/Apercu/otf/apercu_mono_pro.otf') format('opentype');
+  font-weight: bold;
+}
+
 @page {
   size: auto;
   marks: crop;
@@ -88,7 +115,7 @@ a {
 }
 
 p {
-  font-family: 'FreightText', Garamond, Arial;
+  font-family: 'freight-text-pro', Garamond, Arial;
   font-size: 10pt;
   text-align: justify;
   line-height: 120%;
@@ -154,7 +181,7 @@ p span.code, li p span.code {
 }
 
 #mainBody nav li {
-  font-family: 'FreightText', Garamond, Arial;
+  font-family: 'freight-display-pro', Garamond, Arial, serif;
   font-size: 10pt;
   margin: 10px 0;
   padding: 0;
@@ -231,7 +258,7 @@ p span.code, li p span.code {
 /* Glossary
 -----------------------------*/
 #glossContent li {
-  font-family: 'FreightText', Helvetica, Arial;
+  font-family: 'freight-text-pro', Garamond, Arial, serif;
   margin: 30px 0;
   font-size: 14pt;
   clear: both;
