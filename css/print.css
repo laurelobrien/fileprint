@@ -3,10 +3,6 @@
 
 /* Fonts
 -----------------------------*/
-@font-face {
-  font-family: 'FreightText';
-  src: url('../fonts/FreightText-book.otf') format('opentype')
-}
     
 @font-face {
   font-family: 'Panton Icons B';
@@ -25,12 +21,12 @@
 
 @page :left {
   size: auto;
-  margin: 3cm 3.5cm 4cm 2.5cm;
+  margin: 1.5cm 2.5cm 2cm 1.5cm;
 }
 
 @page :right {
   size: auto;
-  margin: 3cm 2.5cm 4cm 3.5cm;
+  margin: 1.5cm 1.5cm 2cm 2.5cm;
 }
 
 
@@ -93,7 +89,7 @@ a {
 
 p {
   font-family: 'FreightText', Garamond, Arial;
-  font-size: 12pt;
+  font-size: 10pt;
   text-align: justify;
   line-height: 120%;
   hyphens: auto;
@@ -101,16 +97,16 @@ p {
 
 h2.chapterTitle {
   text-transform: lowercase;
-  margin: 1cm 0 0 0;
+  margin: 0.5cm 0 0 0;
   padding: 0;
-  font-size: 68pt;
+  font-size: 48pt;
 }
 
 h3.chapterNumber {
   font-family: 'Apercu Mono', Courier;
   font-weight: normal;
   font-size: 12pt;
-  margin: 6cm 0 0 0;
+  margin: 6.5cm 0 0 0;
   text-transform: lowercase;
 }
 
@@ -125,7 +121,7 @@ p span.code, li p span.code {
   display: block;
   margin: 15px 0;
   padding: 5px 15px 5px 20px;
-  background-color: #eeeeee;
+  background-color: #FAE3DC;
   page-break-inside: avoid;
 }
 
@@ -146,8 +142,8 @@ p span.code, li p span.code {
 /* Table of Contents
 -----------------------------*/
 #mainBody header {
-  width: 50%;
-  margin: 250px 0 0 15%;
+  width: 80%;
+  margin: 2.5cm 0 0 15%;
   text-align: left;
 }
 
@@ -159,41 +155,46 @@ p span.code, li p span.code {
 
 #mainBody nav li {
   font-family: 'FreightText', Garamond, Arial;
-  font-size: 12pt;
+  font-size: 10pt;
   margin: 10px 0;
   padding: 0;
+}
+
+#mainBody nav li span {
+  font-family: 'Apercu Mono', Courier;
+  font-size: inherit;
 }
 
 
 /* Title Page
 -----------------------------*/
-#titlePage.container {
-  width: 50%;
-}
-
 #titlePage {
+  width: 80%;
   text-align: center;
 }
 
 #titlePage h1 {
-  font-size: 42pt;
-  margin: 200px 0 60px 0;
+  font-size: 48pt;
+  margin: 2.5cm auto 1cm auto;
 }
 
 #titlePage h3 {
-  font-size: 10pt;
+  font-size: 12pt;
   font-family: 'freight-display-pro', 'FreightText', Garamond, Arial;
   text-align: left;
   -moz-font-feature-settings: "salt";
   -webkit-font-feature-settings: "salt";
   font-feature-settings: "salt";
+  width: 60%;
+  margin: auto;
 }
 
 #titlePage h3#author {
   font-family: 'Apercu Pro', Garamond, Georgia;
-  margin-top: 200px;
+  margin: 1cm auto 0 auto;
   font-style: normal;
   text-transform: lowercase;
+  text-align: center;
 }
 
 #titlePage h3 span {
@@ -206,7 +207,7 @@ p span.code, li p span.code {
 -----------------------------*/
 #seqIcons {
   width: 50%;
-  margin: 0 25% 2cm 25%;
+  margin: 0 25% 1cm 25%;
   text-align: center;
 }
 
@@ -223,7 +224,7 @@ p span.code, li p span.code {
 }
 
 .book-entry {
-  margin: 0 0 2cm 0;
+  margin: 0 0 1cm 0;
 }
 
 
