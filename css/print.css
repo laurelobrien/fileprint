@@ -281,6 +281,10 @@ p span.code, li p span.code {
   margin: 0 0 2cm 0;
 }
 
+#cover img {
+  width: 100%;
+}
+
 
 /* Glossary
 -----------------------------*/
