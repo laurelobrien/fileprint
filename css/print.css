@@ -318,6 +318,12 @@ p span.code, li p span.code {
 
 ol {
   font-family: 'freight-text-pro', Garamond, Georgia, serif;
+  font-size: 10;
+  text-align: justify;
+}
+
+span.bib {
+
 }
 
 
