@@ -140,12 +140,12 @@ h3.chapterNumber {
 
 p span.inlineCode {
   font-family: 'Apercu Mono', Courier;
-  font-size: 9pt;
+  font-size: 8pt;
 }
 
 p span.code, li p span.code {
   font-family: 'Apercu Mono', Courier;
-  font-size: 10pt;
+  font-size: 8pt;
   display: block;
   margin: 15px 0;
   padding: 5px 15px 5px 20px;
@@ -247,14 +247,17 @@ p span.code, li p span.code {
   margin: 2cm 0 0 0;
 }
 
+#versus h3.chapterNumber {
+  margin: 6.5cm 0 0 0;
+}
 
 /* Making Your Own Book
 -----------------------------*/
-#make-your-own-book .chapterNumber {
+#make-your-own-book h3.chapterNumber {
   margin: 9cm 0 0 0;
 }
 
-#make-your-own-book .chapterTitle {
+#make-your-own-book h2.chapterTitle {
   letter-spacing: -0.05em;
 }
 
@@ -284,7 +287,7 @@ p span.code, li p span.code {
 -----------------------------*/
 #glossContent li {
   font-family: 'freight-text-pro', Garamond, Arial, serif;
-  margin: 30px 0;
+  margin: 1cm 0;
   font-size: 14pt;
   clear: both;
   page-break-inside: avoid;
