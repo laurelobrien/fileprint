@@ -316,6 +316,10 @@ p span.code, li p span.code {
   margin: 11cm 0 0 0;
 }
 
+ol {
+  font-family: 'freight-text-pro', Garamond, Georgia, serif;
+}
+
 
 /* Hide / Show
 -----------------------------*/

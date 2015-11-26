@@ -82,7 +82,7 @@
       From the very start of developing a print framework, binding was an important aspect. In an age of infinite information, printed matter we bring into our homes is reserved for special objects. Why buy a paperback you'll struggle to find shelf-space for when you can download it onto an e-reader for a fourth of the price? (Actually, there are a lot of answers to that question, but you'll be spared a software monopoly tirade for the moment.) Throwaway content like news and opinion pieces, disposable in its relevance more than its quality, simply does not need to take up paper and ink anymore. When is print no longer the cheapest way to deliver textual content, it is freed of the obligation to do so—and so we have enjoyed magazines with experimental layouts, rich paper stocks, and niche interests. Sure, you could print a website with optimized or even beautiful styling, but why keep around a stack of pages stapled at the corner like a syllabus? The idea of a website manifesting as a bound book with cover & spine is ineluctable. I imagine the thrill of an industrial designer with access to a 3D printer for the first time is similar.
     </p>
     <p>
-      The final (or at least <i>full</i>) version of this print framework will include binding instructions that can be hooked into the content as a chapter or section, should the author choose. There are a huge number of binding methods that can be done without any special materials, all with different aesthetic and practical qualities. A book of intaglio star chart reproductions may recommend the heaviest stock your printer can manage with a paperlock case, whereas a textbook of Java programs that draw different cats may shrug and recommend printing in greyscale to save ink, staple if you please. <span class="printOnly">This copy is perfect-bound with A5 paper, but everything from saddle-stitch to a hardback Smythe-sewn is possible if a reader is determined to make a book appear where none existed previously, except in data.</span>
+      The final (or at least <i>full</i>) version of this print framework will include binding instructions that can be hooked into the content as a chapter or section, should the author choose. There are a huge number of binding methods that can be done without any special materials, all with different aesthetic and practical qualities. A book of intaglio star chart reproductions may recommend the heaviest stock your printer can manage with a paper-lock case, whereas a textbook of Java programs that draw different cats may shrug and recommend printing in greyscale to save ink, staple if you please. <span class="printOnly">This copy is perfect-bound with A5 paper, but everything from saddle-stitch to a hardback Smythe-sewn is possible if a reader is determined to make a book appear where none existed previously, except in data.</span>
     </p>
 
   </div>
@@ -131,7 +131,7 @@
       }</span>
       The <span class="inlineCode">content</span> is whatever is inside of the <span class="inlineCode">href</span> attribute in the last example. And now a printed link to google (http://google.com) expands itself.</p>
 
-      <p>The problem with this method is the assumption that your reader will put down the book, open a browser on a  nearby device, and type the link in. It’s better than no link at all if there’s any ambiguity about what you’re referencing or how to find it, but it’s kind of like saying “here’s the source, I’ve done my journalistic duty, you can go find it if you really want”. It acts like more like a <i>Further Reading</i> suggestion than a connected piece of information. Chicago-style footnotes and annotated citations, more commonly found in scholarly journals than magazines, do a much better job of providing context <i>in the moment</i>. In the print stylesheet, you can add a similar pseudo class that appends a footnote indicator instead of an entire link:
+      <p>The problem with this method is the assumption that your reader will put down the book, open a browser on a  nearby device, and type the link in. It’s better than no link at all if there’s any ambiguity about what you’re referencing or how to find it, but it’s kind of like saying “here’s the source, I’ve done my journalistic duty, you can go find it if you really want”. It acts more like a <i>Further Reading</i> suggestion than a connected piece of information. Chicago-style footnotes and annotated citations, more commonly found in scholarly journals than magazines, do a much better job of providing context <i>in the moment</i>. In the print stylesheet, you can add a similar pseudo class that appends a footnote indicator instead of an entire link:
       <span class="code">a::after {<br>
       &nbsp;&nbsp;content: “1”;<br>
       &nbsp;&nbsp;font-size: 6pt;<br>
@@ -188,7 +188,7 @@
         <h3>You will need</h3>
         <ul>
           <li>Printer that can print double-sided<br><i>or “duplex”</i></li>
-          <li>PVA glue<br><i>the cheap white stuff you used in elementary school</i></li>
+          <li><span class="smallCaps">PVA</span> glue<br><i>the cheap white stuff you used in elementary school</i></li>
           <li>Bulldog clips, a big hair clip, or a chip-bag clip<br><i>or a book press if you're already book-making inclined</i></li>
           <li>Paintbrush<br><i>one you’re not too attached to</i></li>
         </ul>
@@ -197,30 +197,29 @@
         <h3 class="instruction">
           Navigate to File > Print... in your browser's menu.
         </h3>
-        <img class="dropShadow" src="images/making/screenshot_fileprint.png">
+        <img class="dropShadow" src="images/making/file_print.png">
         
-        <h3 class="instruction">Click "Print using System Dialogue..." and in this new window, change the settings so 2 pages are printed per sheet.</h3>
+        <h3 class="instruction">Click "Print using System Dialogue..." and in this new window, tick two-sided.</h3>
         <img class="dropShadow" src="images/making/print_dialogue.png" alt="">
-        <p>The system dialogue is your computer's method of printing documents, instead of the browser's, which usually means more custom options. A lot of control has been relinquished by your browser now, and we're limited to what the printer and your OS know how to do.</p>
-        <p>
-        On <span class="smallCaps">OSX</span>, changing this setting is possible in the "Layout" sub-menu.</p>
+        <p>The system dialogue is your computer's method of printing documents, instead of the browser's, which usually means more custom options. A lot of control has been relinquished by your browser now, and we're limited to what the printer and your OS know how to do. </p>
+        <p>In the <i>Layout</i> sub-menu, select <i>Long-Edge binding</i>.</p> In some printers this can actually bind it, but we're just how the back-side of a page should be oriented.
 
-        <h3 class="instruction">Make sure <i>Two-Sided</i> is ticked and in the same Layout sub-menu, select <i>Short-Edge binding</i>.</h3>
-        <img class="dropShadow" src="images/making/binding_menu.png" alt="">
-        <p>This can actually bind it on some printers, but we're just indicating how the second side should be oriented in relation to the first for printing two-sided.</p>
-
-        <h3 class="instruction">Print the whole thing and fold each page in half width-wise.</h3>
+        <h3 class="instruction">If you're printing smaller than letter-size, select a thin hairline border.</h3>
         <img src="" alt="">
-        <p>Each one of these folded pages makes a <i>section</i>, which are stacked on top of each other inside the book. You can use these sections for <a href="">Smythe-sewn binding</a> if you're so inclined.</p> 
-        <p>The front of the sheet should be folded so its two pages touch faces, so to speak.</p>
+        <p>This acts as crop marks in lieu of actual printer's marks. 
 
-        <h3 class="instruction">Stack your sections, line them up, and clamp them in place near the folds with your clip.</h3>
-        <img src="images/making/bookpress.jpg" alt="">
-        <p>If you have a book press, the folds should stick out of the press a quarter of an inch or so. This flat plane of folded edges pressed together will form our book's spine.</p>
+        <h3 class="instruction">If you don't have a duplex printer, print even pages first and odd pages second to imitate the effect.</h3>
+        <img src="images/making/two-sided_manual.jpg" alt="">
+        <p>To "manually" print two-sided, print even-numbered pages in reverse order, put the pages back in the paper feed, and then print odd-numbered page in normal order.</p>
 
-        <h3 class="instruction">With your brush, apply three even coats glue to the flat edge of the spine, allowing to dry between each coat.</h3>
+          <p>If you're using an inkjet printer that finished printing face-up and has a paper feed in the rear, print the even-numbered pages in normal order, re-feed, and then the odd-numbered pages in reverse order.</p>
+
+        <h3 class="instruction">Print the cover on heavy paper like cardstock or watercolour rag.</h3>
         <img src="images/making/apply_glue.jpg" alt="">
-        <p>Ensure your folded edges are pressed close enough together that the glue bridges the tiny gaps between them. For extra strength, score the spine with an xacto knife or rough it up with fine sandpaper before applying glue—this will give it a textured surface to adhere to.</p>
+        <p>Because the cover has to wrap around the pages entirely, it exists as a pdf which can be downloaded <a href="">here</a>. Feel free to use anything you like, however, such as leftover wallpaper or thin cardboard etc.</p>
+
+        <h3 class="instruction">Follow Sea Lemon's instructions for perfect binding.</h3>
+        <p>This is where you'll need the bulldog clips, <span class="smallCaps">PVA</span> glue, and brush. From there it takes about 10 minutes minus drying time.</p>
 
     </div> <!-- end of #makingContent -->
   </div> <!-- end of #making-this-book -->
@@ -236,16 +235,16 @@
 
       <div class="pageBreak"></div>
 
-      <p>With more context, it can be reiterated that the goal of this publication is to serve as a first draft for a web-to-print development framework. Several online publications have created print stylesheets but they more-or-less just strip the web version of anything that won’t print well, such as links and navigation bars. <a href="https://css-tricks.com/">CSS-Tricks</a>, a site filled with tutorials and tips for working with <span class="smallCaps">css</span>, has one that aims to strip away print-unfriendly content and make the text as readable as possible. They know their pages will be printed as offline reference material, and creating a beautiful print layout would require more wrangling than their readers really need.</p>
+      <p>With more context, it can be reiterated that the goal of this publication is to serve as a first draft for a web-to-print development framework. Several online publications have created print stylesheets but they more-or-less just strip the web version of anything that won’t print well, such as links and navigation bars. <a href="https://css-tricks.com/">CSS-Tricks</a><span class="footNumber">1</span>, a site filled with tutorials and tips for working with <span class="smallCaps">css</span>, has one that aims to strip away print-unfriendly content and make the text as readable as possible. They know their pages will be printed as offline reference material, and creating a beautiful print layout would require more wrangling than their readers really need.</p>
 
       <p>
         <a class ="noDot" href="http://supercommunity.e-flux.com/topics/supercommunity/"><img src="images/eflux_pdf.png" class="floatImg"></a>
-        <a href="#furtherReading">Many web publications</a> do put a lot of sweat and tears into providing both formats in their optimized glory, but they are developed separately—the print version is a product for purchase put together by print designers. <i>e-flux journal</i> has a (rather genius) <a href="http://supercommunity.e-flux.com/issue/"><span class="smallCaps">pdf</span> generator</a> with a variety of templates but it's proprietary software.
+        <a href="#furtherReading">Many web publications</a> do put a lot of sweat and tears into providing both formats in their optimized glory, but they are developed separately—the print version is a product for purchase put together by print designers. <i>e-flux journal</i> has a (rather genius) <a href="http://supercommunity.e-flux.com/issue/"><span class="smallCaps">pdf</span> generator</a><span class="footNumber">2</span> with a variety of templates but it's proprietary software.
       </p>
 
-      <p>A web framework can have many forms but the simplest is a pre-made <span class="smallCaps">css</span> stylesheet. <a href="http://getbootstrap.com/">Bootstrap</a> and <a href="http://foundation.zurb.com/">Foundation</a> both have dense stylesheets you can reference in your <span class="smallCaps">html</span> code, and styling a page is as simple as slotting classes into tags that match your purpose, such as “navbar” or “button”. And, of course, it’s always possible to add your own <span class="smallCaps">css</span> on top as a separate stylesheet should you want to customize it further.</p>
+      <p>A web framework can have many forms but the simplest is a pre-made <span class="smallCaps">css</span> stylesheet. <a href="http://getbootstrap.com/">Bootstrap</a><span class="footNumber">3</span> and <a href="http://foundation.zurb.com/">Foundation</a><span class="footNumber">4</span> both have dense stylesheets you can reference in your <span class="smallCaps">html</span> code, and styling a page is as simple as slotting classes into tags that match your purpose, such as “navbar” or “button”. And, of course, it’s always possible to add your own <span class="smallCaps">css</span> on top as a separate stylesheet should you want to customize it further.</p>
 
-      <p>As it stands, this books’s stylesheets are far too customized for public use (though feel free to peak at it via <span class="inlineCode">right click > View Page Source</span>; they’re linked inside the <span class="inlineCode"><&zwj;head></span> tag). Experimenting with all the abilities and limitations of <span class="inlineCode">@page</span> and <span class="inlineCode">@media print</span> meant some jerry-rigging and the use of magic numbers<span class="footNumber">9</span>. A final public version will be released by the end of 2015, available on <a href="https://github.com/laurelobrien">GitHub<span class="footNumber">9</span></a>. However, <span class="smallCaps">html</span> and <span class="smallCaps">css</span> are quick to get started with if you're not yet familiar with them, and the ability to create and modify your own content online is incredibly liberating.</p>
+      <p>As it stands, this books’s stylesheets are far too customized for public use (though feel free to peak at it via <span class="inlineCode">right click > View Page Source</span>; they’re linked inside the <span class="inlineCode"><&zwj;head></span> tag). Experimenting with all the abilities and limitations of <span class="inlineCode">@page</span> and <span class="inlineCode">@media print</span> meant some jerry-rigging and the use of magic numbers. A final public version will be released by the end of 2015, available on <a href="https://github.com/laurelobrien">GitHub<span class="footNumber">5</span></a>. However, <span class="smallCaps">html</span> and <span class="smallCaps">css</span> are quick to get started with if you're not yet familiar with them, and the ability to create and modify your own content online is incredibly liberating.</p>
 
     </div>
   </div>
@@ -325,14 +324,14 @@
       </div>
 
       <div id="gridCell">
-        <a class="noUnderline" href="http://magculture.com/out-now-print-is-dead-long-live-print/">
-          <img src="images/printisdead.jpg">
+        <a class="noUnderline" href="https://www.youtube.com/playlist?list=PL2F704E01F80BA1E9">
+          <img src="images/sealemon.png">
           <h3>
-            Print is Dead. Long Live Print
+            Sea Lemon's Book-binding Tutorials
           </h3>
         </a>
         <p>
-          Ruth Jamieson collected examples of independent magazines succeeding where Big Print suffers in a series of case studies titled <i>Print is Dead. Long Live Print</i>. Jamieson believes that print as we knew it for hundreds of years has been slain by the web, but its death clears the way for publications to be unconcerned with immediacy, universal appeal, or competing with the internet's torrent of information.
+          Sea Lemon, a DIY youtube channel, has a fantastic <a href="https://www.youtube.com/playlist?list=PL2F704E01F80BA1E9">playlist</a> of book-binding tutorials. The videos are bright, straight-forward, and include alternatives for book-binding tools that you may not have on hand or want to invest in for just one book.
         </p>
       </div>
 
@@ -353,15 +352,27 @@
       <div class="pageBreak"></div>
 
       <div class="book-entry">
-        <h3>Protocol: How Control Exists After Decentralization</h3>
+        <h3>Protocol: How control exists after decentralization</h3>
         <h4>Alexander R. Galloway, 2004</h4>
         <p><i>Protocol</i> explains how strict structures and systems must exist for networks to function, and that the internet is built on <i>control</i>, not freedom. Computers are incredibly literal, which means those of us who interface with them must obey protocols if we hope to communicate effectively, such as how a browser renders code or what software is installed on a reader's computer. This very book follows strict <span class="smallCaps">css</span> protocols so that something unusual and creative—printing it—is possible (although not without its own frustrations).</p>
       </div>
 
       <div class="book-entry">
-        <h3>Print is Dead. Long Live Print: The World's Best Independent Magazines</h3>
+        <h3>Print is Dead. Long Live Print: The world's best independent magazines</h3>
         <h4>Ruth Jamieson, 2015</h4>
-        <p><i></i>Ruth Jamieson has collected examples of independent magazines succeeding where Big Print fails in a series of case studies titled <i>Print is Dead. Long Live Print</i>. Jamieson believes that print as we knew it for hundreds of years has been slain by web publishing, but like a forest fire its death clears the way for new growth. Today's magazines can afford to be unconcerned with immediacy, universal appeal, or competing with the internet's torrent of information. Niche, material, and innovation are king.</p>
+        <p>Ruth Jamieson has collected examples of independent magazines succeeding where Big Print fails in a series of case studies titled <i>Print is Dead. Long Live Print</i>. Jamieson believes that print as we knew it for hundreds of years has been slain by web publishing, but like a forest fire its death clears the way for new growth. Today's magazines can afford to be unconcerned with immediacy, universal appeal, or competing with the internet's torrent of information. Niche, material, and innovation are king.</p>
+      </div>
+
+      <div class="book-entry">
+        <h3>Making Handmade Books: 100+ bindings, structures & forms</h3>
+        <h4>Alisa Golden, 2010</h4>
+        <p><i>Making Handmade Books</i> is filled with concise and illustrated instructions for (literally) hundreds of binding methods and variations. There's always youtube, but being able to browse so many methods in one place without sifting through the shit of the internet is incredibly useful if you'd like to try your hand at more than one.</p>
+      </div>
+
+      <div class="book-entry">
+        <h3>Publication Design: A guide to page layout, typography, format and style</h3>
+        <h4>Allen Hurlburt, 1971</h4>
+        <p>Publication design is such a wide and varied topic that it's hard to begin recommending books about it. However, Hurlburt's book is classic and, being written before the advent of web publication, can provide some insight into how print worked back then when it wasn't influenced by or competing with screens(besides some very early-stages desktop publication).</p>
       </div>
 
     </div>
@@ -427,12 +438,12 @@
       <div class="pageBreak"></div>
 
       <ol>
-        <li>test</li>
-        <li>tesssst</li>
+        <li>https://css-tricks.com/. CSS-Tricks is a blog dedicated to <span class="smallCaps">CSS</span> and ways it can replace programming like Javascript and PHP.</li>
+        <li>http://supercommunity.e-flux.com/issue/. <i>e-flux journal</i> distributes the print version of their publication by sending <span class="smallCaps">PDF</span>s to publishers made from their PDF generator. The generator itself was written by Adam Florin in Ruby—at the time of printing this book, his blog post about its development is offline but was previously located at http://adamflorin.com/work/e-flux-journal-layout-generator.</li>
         <li>wee woo</li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>http://getbootstrap.com/. Bootstrap was developed by Twitter as a column-based web framework and is one of the most popular ever. It exists as a very long stylesheet containing hundreds of styling options as classes which can be attached to your <span class="smallCaps">html</span>. You've probably used hundreds of websites built with builtstrap, generally characterized by its "jumbotron" landing image with a carousel cycle of images.</li>
+        <li>http://foundation.zurb.com/. Foundation is a web framework like Bootstrap, with less focus on styling typography and other aesthetic elements for you. It is also incredibly popular—the popularity of both an indicator of what poor-shape column-based layouts on the web are in. While they may seem the default they can require some taming and jerry-rigging.</li>
+        <li>https://github.com/laurelobrien. That's me! Github is a version-control and collaboration tool. With Git you can "commit" changes to a file or project you can roll back or compare changes between versions, and Github is the online tool that syncs it all for public browsing. Github is one of the cornerstones of open-source software today; everything you want to sync with Github is public, and the entire interface is based around downloading, cloning, pushing changes to other people's projects and accepting feedback. The entire project folder for this book is viewable there, as will be the final public-use version of the print stylesheet.</li>
         <li></li>
         <li></li>
         <li></li>
