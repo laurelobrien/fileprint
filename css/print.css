@@ -140,12 +140,12 @@ h3.chapterNumber {
 
 p span.inlineCode {
   font-family: 'Apercu Mono', Courier;
-  font-size: 8pt;
+  font-size: 8.5pt;
 }
 
 p span.code, li p span.code {
   font-family: 'Apercu Mono', Courier;
-  font-size: 8pt;
+  font-size: 8.5pt;
   display: block;
   margin: 15px 0;
   padding: 5px 15px 5px 20px;
@@ -223,7 +223,6 @@ p span.code, li p span.code {
   margin: 1cm auto 0 auto;
   font-style: normal;
   text-transform: lowercase;
-  text-align: center;
 }
 
 #titlePage h3 span {
@@ -254,7 +253,7 @@ p span.code, li p span.code {
 /* Making Your Own Book
 -----------------------------*/
 #make-your-own-book h3.chapterNumber {
-  margin: 9cm 0 0 0;
+  margin: 11cm 0 0 0;
 }
 
 #make-your-own-book h2.chapterTitle {
@@ -266,7 +265,7 @@ p span.code, li p span.code {
 -----------------------------*/
 #further-reading-print h3 {
   font-weight: bold;
-  margin: 0 0 1cm 0;
+  margin: 0 0 0.3cm 0;
 }
 #further-reading-print h4 {
   margin: 0;
@@ -274,8 +273,8 @@ p span.code, li p span.code {
   color: #555555;
 }
 
-#further-reading-print #chapterNumber {
-  margin: 9cm 0 0 0;
+#further-reading-print h3.chapterNumber {
+  margin: 10cm 0 0 0;
 }
 
 .book-entry {
@@ -308,6 +307,13 @@ p span.code, li p span.code {
   float: left;
   text-align: left;
   width: 27%;
+}
+
+
+/* Bibliography
+-----------------------------*/
+#biblio h3.chapterNumber {
+  margin: 11cm 0 0 0;
 }
 
 
