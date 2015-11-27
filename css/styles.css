@@ -489,6 +489,7 @@ img {
 }
 
 #glossContent li p {
+  box-sizing: border-box;
   width: 70%;
   float: right;
   border-left: 1px #000000 solid;
@@ -497,7 +498,7 @@ img {
 }
 
 #glossContent li h3 {
-  font-family: 'Apercu Pro', Garamond, Georgia;
+  font-family: 'Apercu Pro', Helvetica, Arial, sans-serif;
   font-size: inherit;
   font-weight: normal;
   float: left;
