@@ -116,7 +116,7 @@ a {
 }
 
 p {
-  font-family: 'freight-text-pro', Garamond, Arial;
+  font-family: 'freight-text-pro', Garamond, Georgia, serif;
   font-size: 10pt;
   text-align: justify;
   line-height: 120%;
@@ -210,11 +210,11 @@ p span.code, li p span.code {
 #titlePage h3 {
   font-size: 12pt;
   font-family: 'freight-display-pro', 'FreightText', Garamond, Arial;
-  text-align: left;
+  text-align: justify;
   -moz-font-feature-settings: "salt";
   -webkit-font-feature-settings: "salt";
   font-feature-settings: "salt";
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 
