@@ -48,12 +48,12 @@
 
 @page :left {
   size: auto;
-  margin: 1.5cm 2.5cm 2cm 1.5cm;
+  margin: 2cm 2.5cm 2cm 2cm;
 }
 
 @page :right {
   size: auto;
-  margin: 1.5cm 1.5cm 2cm 2.5cm;
+  margin: 2cm 2cm 2cm 2.5cm;
 }
 
 
@@ -76,6 +76,7 @@ body {
 
 img {
   width: 100%;
+  margin: 1cm 0;
 }
 
 .dropshadow {
@@ -115,7 +116,7 @@ a {
 }
 
 p {
-  font-family: 'freight-text-pro', Garamond, Arial;
+  font-family: 'freight-text-pro', Garamond, Georgia, serif;
   font-size: 10pt;
   text-align: justify;
   line-height: 120%;
@@ -139,12 +140,12 @@ h3.chapterNumber {
 
 p span.inlineCode {
   font-family: 'Apercu Mono', Courier;
-  font-size: 10pt;
+  font-size: 8.5pt;
 }
 
 p span.code, li p span.code {
   font-family: 'Apercu Mono', Courier;
-  font-size: 10pt;
+  font-size: 8.5pt;
   display: block;
   margin: 15px 0;
   padding: 5px 15px 5px 20px;
@@ -169,7 +170,7 @@ p span.code, li p span.code {
 /* Table of Contents
 -----------------------------*/
 #mainBody header {
-  width: 80%;
+  width: 100%;
   margin: 2.5cm 0 0 15%;
   text-align: left;
 }
@@ -181,14 +182,15 @@ p span.code, li p span.code {
 }
 
 #mainBody nav li {
-  font-family: 'freight-display-pro', Garamond, Arial, serif;
-  font-size: 10pt;
+  font-family: 'freight-display-pro', Garamond, Georgia, serif;
+  font-size: 12pt;
   margin: 10px 0;
   padding: 0;
 }
 
 #mainBody nav li span {
-  font-family: 'Apercu Mono', Courier;
+  font-family: 'Apercu Pro', Helvetica, Arial, serif;
+  margin: 0 0.5cm 0 0;
   font-size: inherit;
 }
 
@@ -208,11 +210,11 @@ p span.code, li p span.code {
 #titlePage h3 {
   font-size: 12pt;
   font-family: 'freight-display-pro', 'FreightText', Garamond, Arial;
-  text-align: left;
+  text-align: justify;
   -moz-font-feature-settings: "salt";
   -webkit-font-feature-settings: "salt";
   font-feature-settings: "salt";
-  width: 60%;
+  width: 90%;
   margin: auto;
 }
 
@@ -221,7 +223,6 @@ p span.code, li p span.code {
   margin: 1cm auto 0 auto;
   font-style: normal;
   text-transform: lowercase;
-  text-align: center;
 }
 
 #titlePage h3 span {
@@ -239,10 +240,32 @@ p span.code, li p span.code {
 }
 
 
+/* Web vs Print
+-----------------------------*/
+#versus h3 {
+  margin: 2cm 0 0 0;
+}
+
+#versus h3.chapterNumber {
+  margin: 6.5cm 0 0 0;
+}
+
+/* Making Your Own Book
+-----------------------------*/
+#make-your-own-book h3.chapterNumber {
+  margin: 11cm 0 0 0;
+}
+
+#make-your-own-book h2.chapterTitle {
+  letter-spacing: -0.05em;
+}
+
+
 /* Further Reading
 -----------------------------*/
 #further-reading-print h3 {
   font-weight: bold;
+  margin: 0 0 0.3cm 0;
 }
 #further-reading-print h4 {
   margin: 0;
@@ -250,8 +273,16 @@ p span.code, li p span.code {
   color: #555555;
 }
 
+#further-reading-print h3.chapterNumber {
+  margin: 11cm 0 0 0;
+}
+
 .book-entry {
-  margin: 0 0 1cm 0;
+  margin: 0 0 2cm 0;
+}
+
+#cover img {
+  width: 100%;
 }
 
 
@@ -259,9 +290,10 @@ p span.code, li p span.code {
 -----------------------------*/
 #glossContent li {
   font-family: 'freight-text-pro', Garamond, Arial, serif;
-  margin: 30px 0;
+  margin: 1cm 0;
   font-size: 14pt;
   clear: both;
+  page-break-inside: avoid;
 }
 
 #glossContent li p {
@@ -279,6 +311,23 @@ p span.code, li p span.code {
   float: left;
   text-align: left;
   width: 27%;
+}
+
+
+/* Bibliography
+-----------------------------*/
+#biblio h3.chapterNumber {
+  margin: 10cm 0 0 0;
+}
+
+ol {
+  font-family: 'freight-text-pro', Garamond, Georgia, serif;
+  font-size: 10pt;
+  text-align: justify;
+}
+
+span.bib {
+
 }
 
 
